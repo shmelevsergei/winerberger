@@ -10,8 +10,6 @@
 *,
 *:before,
 *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -203,7 +201,8 @@ h1, h2, h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  column-gap: 2rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
 }
 .info-header__logo {
   display: inline-block;
@@ -238,7 +237,8 @@ h1, h2, h3 {
   display: flex;
   justify-content: space-around;
   margin: auto;
-  column-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
 }
 
 .social__link i {
@@ -367,7 +367,8 @@ h1, h2, h3 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 80px 0;
-  column-gap: 1.8rem;
+  -moz-column-gap: 1.8rem;
+       column-gap: 1.8rem;
 }
 .about__tittle {
   margin-bottom: 20px;
@@ -433,7 +434,8 @@ h1, h2, h3 {
 .benefits__wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
   row-gap: 50px;
   padding-left: 20px;
 }
@@ -577,13 +579,15 @@ h1, h2, h3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 250px;
-  column-gap: 25px;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
 }
 .images__bottom {
   margin-top: 25px;
   display: flex;
   justify-content: space-between;
-  column-gap: 25px;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
 }
 
 .top__img {
@@ -729,7 +733,8 @@ h1, h2, h3 {
 .video__wrapper {
   display: flex;
   justify-content: center;
-  column-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
 }
 .video__item {
   width: 500px;
@@ -868,7 +873,8 @@ h1, h2, h3 {
 }
 .objects__wrapper {
   display: flex;
-  column-gap: 40px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
 }
 .objects__item {
   max-width: 580px;
@@ -1030,7 +1036,8 @@ h1, h2, h3 {
 .clients__company {
   display: flex;
   justify-content: center;
-  column-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
   align-items: center;
   margin-top: 30px;
 }
@@ -1047,75 +1054,17 @@ h1, h2, h3 {
 
 .consultation {
   padding: 80px 0 0 0;
+  text-align: center;
 }
 .consultation__title {
   max-width: 700px;
-  margin: 0 auto;
-  text-align: center;
 }
 .consultation__form {
-  height: 800px;
+  height: 700px;
   background-image: url("/img/bg/bg5.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 80px 0 80px 0;
-}
-
-.footer {
-  padding: 80px 0 0 0;
-}
-.footer__wrapper {
-  display: flex;
-  justify-content: center;
-  column-gap: 100px;
-  padding-bottom: 30px;
-}
-.footer__logo {
-  display: inline-block;
-  max-width: 250px;
-  cursor: pointer;
-}
-.footer__contacts {
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-  row-gap: 10px;
-}
-.footer__contacts * span {
-  color: #000;
-  font-weight: 600;
-  font-size: 1.2em;
-  margin-left: 5px;
-}
-.footer__social {
-  display: flex;
-  column-gap: 10px;
-  margin-top: 40px;
-}
-.footer__map {
-  width: 500px;
-  height: 300px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.308);
-}
-.footer__copy {
-  margin-top: 30px;
-  padding: 30px 0;
-  background-color: #800000;
-  color: #fff;
-  text-align: center;
-}
-
-.logo__img {
-  width: 100%;
-}
-
-.contacts-footer__phone span:hover {
-  text-decoration: underline;
-}
-.contacts-footer__mail span:hover {
-  text-decoration: underline;
 }
 
 .form {
@@ -1271,4 +1220,4 @@ textarea.form__input {
 
 .form__button:active {
   top: 2px;
-}
+}/*# sourceMappingURL=style.css.map */

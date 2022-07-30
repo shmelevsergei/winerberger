@@ -4,10 +4,1028 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="libs/slick/slick.css">
+    <link rel="stylesheet" href="libs/slick/slick-theme.css">
     <link rel="stylesheet" href="css/style.min.css" />
-    <title>Document</title>
+
+    
+    <title>Winerberger</title>
+    <!-- фиксированная ширина -->
+    <!-- <meta name="viewport" content="width=1170">   -->
+    <!-- Отключает принудительную ссылку у номера телефона на iOS -->
+    <meta name="format-detection" content="telephone=no">
+    
+    
+    
+    <!-- SEO - оптимизация -->
+    <!-- Краткое описание страницы  -->
+    <meta name="description" content=" ">
+    
+    <!-- Ключевые слова страницы  -->
+    <meta name="keywords" content=" ">
+    
+    <!-- Управление доступом поисковых роботов к странице -->
+    <!-- <meta name="robots" content=""> -->
+    
+    <!-- По умолчанию страница индексируется поисковыми система, то есть этот мета тег дополнительно указывать не нужно. Но если задача стоит запретить либо ограничить индексацию, то существуют следующие значения:
+        none – запретить индексацию страницы полностью.
+        noindex – запретить индексацию содержимого страницы.
+        nofollow – игнорировать ссылки в пределах веб-страницы. 
+        noimageindex - запретить индексацию присутствующих на странице изображений
+        noarchive - запретить  вывод в результатах поиска ссылки «Сохраненная копия»
+        nosnippet - запретить  вывод в поисковой выдаче под названием страницы фрагмента текста, описывающего её содержание.
+        Значения указываются через запятую. -->
+    
+    
+    <!-- Технические -->
+    <!-- Автор страницы -->
+    <meta name="Author" content=" ">
+    
+    <!-- Авторские права -->
+    <meta name="Copyright" content=" ">
+    
+    <!-- Адрес автора -->
+    <meta name="Address" content=" ">
+    
+    <!-- Редирект (перезагрузка) страницы. Задержка в секундах; url=Адрес сайта/страницы -->
+    <meta http-equiv="refresh" content="S; url=URL">
+    
+    <!-- S= Задержка в секундах
+        URL= Адрес сайта/страницы -->
+    
+    
+    <!-- локализация сайта, для русскоязычного сайта ru_RU -->
+    <meta property="og:locale" content="ru_RU">
+    <!-- тип контента, по умолчанию используется article -->
+    <meta property="og:type" content="article">
+    <!-- заголовок страницы, который будет выводится в записи социальной сети -->
+    <meta property="og:title" content=" ">
+    <!-- описание страницы -->
+    <meta property="og:description" content=" ">
+    <!-- ссылка на изображение, которое будет публиковаться в записи -->
+    <meta property="og:image" content=" ">
+    <!-- ссылка на текущую страницу -->
+    <meta property="og:url" content=" ">
+    <!-- название сайта -->
+    <meta property="og:site_name" content=" ">
+    
+    
+    <!-- Тип карты, по умолчанию используется summary -->
+    <meta name="twitter:card" content="summary">
+    <!-- Имя/логин автора -->
+    <meta name="twitter:site" content=" ">
+    <!-- Название страницы -->
+    <meta name="twitter:title" content=" ">
+    <!-- Описание страницы -->
+    <meta name="twitter:description" content=" ">
+    <!-- Cсылка на изображение -->
+    <meta name="twitter:image" content=" ">
+
   </head>
   <body>
-    <h1>Привет</h1>
+    <header class="header">
+      <div class="container">
+        <div class="header__info info-header">
+          <a href="#" class="info-header__logo">
+            <img src="img/logo.png" alt="logo">
+          </a>
+          
+
+          <ul class="info-header__contacts">
+            <li class="contacts__phone"> 
+              <a href="tell:+74955328087">
+                <i class="fa fa-phone-square" aria-hidden="true"><span>8 (495) 532-80-87</span></i>
+              </a>
+            </li>
+
+            <li class="contacts__time">
+              <i class="fa fa-calendar" aria-hidden="true"><span>ПН-СБ: 09.00 -18.00</span></i>
+            </li>
+            
+            <li class="contacts__mail">
+              <a href="email:info@stone-wood-house.ru"> 
+                <i class="fa fa-envelope" aria-hidden="true"><span>info@stone-wood-house.ru</span></i>
+              </a>
+            </li>
+          </ul>
+            
+          <div class="info-header__connection">
+            <button class="info-header__button btn">Задать вопрос</button>
+            <ul class="info-header__social">
+              <li class="social__link">
+                <a class="social__youtube" href="https://www.youtube.com/channel/UCZIs0bRh2UB7gFpLxaoSATw?app=desktop">
+                  <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="social__link">
+                <a class="social__tg" href="https://t.me/stonewoodhouse">
+                  <i class="fa fa-telegram" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="social__link">
+                <a class="social__vk" href="https://vk.com/stonewoodhouse">
+                  <i class="fa fa-vk" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+            
+        </div>
+      </div>
+      
+      <ul class="header__menu menu">
+        <li class="menu__item">
+          <a class="menu__link" href="#" >Этапы строительства</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#" >Строим сейчас</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#" >Готовые дома</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#" >Каталог проектов</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#" >Новости</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#" >Wienerberger</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#" >Контакты</a>
+        </li>
+      </ul>
+    </header>
+
+    <main class="main">
+
+      <!------- Promo ------>
+      <section class="promo">
+        <div class="promo__slider">
+          <div>
+            <div class="promo__bg promo__bg-1"></div>
+          </div>
+          <div>
+            <div class="promo__bg promo__bg-2"></div>
+          </div>
+          <div>
+            <div class="promo__bg promo__bg-3"></div>
+          </div>
+          <div>
+            <div class="promo__bg promo__bg-4"></div>
+          </div>
+          <div>
+            <div class="promo__bg promo__bg-5"></div>
+          </div>
+          <div>
+            <div class="promo__bg promo__bg-6"></div>
+          </div>
+        </div>
+        
+        <div class="container">
+          
+          <div class="promo__wrapper">
+            <h1 class="promo__tittle">
+              СТРОИМ ЭЛИТНЫЕ ДОМА ПОД КЛЮЧ
+            </h1>
+            <div class="promo__descr">
+              Сотрудничаем с ведущими и зарекомендовавшими себя частными архитекторами и архитектурными бюро
+            </div>
+            <button class="promo__button btn">Заказать звонок</button>
+          </div>
+        </div>
+      </section>
+      
+      
+      <section class="about">
+        <div class="container">
+          <div class="about__wrapper">
+            <div class="about__descr">
+              <h2 class="about__tittle">НА ПРОТЯЖЕНИИ 7 ЛЕТ, НАША КОМПАНИЯ ЗАНИМАЕТСЯ СТРОИТЕЛЬСТВОМ ЭЛИТНЫХ КОТТЕТДЖЕЙ И ЗДАНИЙ.
+              </h2>
+              <p class="about__text">Проекты домов и коттеджей нашей компании – это множество инновационных архитектурных и
+                планировочных решений. У нас Вы
+                сможете найти любое строение, которое вам придется по вкусу, будь то традиционный коттедж или же здание в стиле
+                минимализма. Наша компания поможет подобрать для Вас нужный проект дома и при необходимости внести корректировки в
+                проект. Так же хотелось бы отметить, что в основе нашей работы лежат самые современные технологии, благодаря
+                которым
+                эффективность и работоспособность нашей компании выше, чем у остальных, так же в нашей работе, мы используем самые
+                экологически безопасные материалы, которые наносят минимальный ущерб окружающей природе.</p>
+            </div>
+            <div class="about__video">
+              <iframe class="video__block" src="https://www.youtube.com/embed/L-4oFC45eJ4?controls=0" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen=""></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="cards">
+        <div class="container">
+          <div class="cards__wrapper cards__slider">
+            <div>
+              <div class="cards__block">
+                <div class="cards__img"><img src="/img/cards/card_1.jpg" alt="" class="img__card"></div>
+                <div class="cards__img"><img src="/img/cards/card_2.jpg" alt="" class="img__card"></div>
+              </div>
+            </div>
+            
+            <div>
+              <div class="cards__block">
+                <div class="cards__img"><img src="/img/cards/card_3.jpg" alt="" class="img__card"></div>
+                <div class="cards__img"><img src="/img/cards/card_4.jpg" alt="" class="img__card"></div>
+              </div>
+            </div>
+            
+            <div>
+              <div class="cards__block">
+                <div class="cards__img"><img src="/img/cards/card_5.jpg" alt="" class="img__card"></div>
+                <div class="cards__img"><img src="/img/cards/card_6.jpg" alt="" class="img__card"></div>
+              </div>
+            </div>
+            
+            <div>
+              <div class="cards__block">
+                <div class="cards__img"><img src="/img/cards/card_7.jpg" alt="" class="img__card"></div>
+                <div class="cards__img"><img src="/img/cards/card_8.jpg" alt="" class="img__card"></div>
+              </div>
+            </div>
+            
+            <div>
+              <div class="cards__block">
+                <div class="cards__img"><img src="/img/cards/card_9.jpg" alt="" class="img__card"></div>
+                <div class="cards__img"><img src="/img/cards/card_10.jpg" alt="" class="img__card"></div>
+              </div>
+            </div>
+            
+            <div>
+              <div class="cards__block">
+                <div class="cards__img"><img src="/img/cards/card_11.jpg" alt="" class="img__card"></div>
+                <div class="cards__img"><img src="/img/cards/card_12.jpg" alt="" class="img__card"></div>
+              </div>
+            </div>
+            
+            <div>
+              <div class="cards__block">
+                <div class="cards__img"><img src="/img/cards/card_13.jpg" alt="" class="img__card"></div>
+                <div class="cards__img"><img src="/img/cards/card_14.jpg" alt="" class="img__card"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="benefits">
+        <div class="container">
+          <h2 class="benefits__tittle">
+            ПОЧЕМУ С НАМИ ВЫГОДНО СТРОИТЬ?
+          </h2>
+
+          <div class="line"></div>
+
+          <div class="benefits__wrapper">
+            <div class="benefits__item item-benefits">
+              <div class="item-benefits__icon">
+                <i class="fa fa-handshake-o benefits-icon" aria-hidden="true"></i>
+              </div>
+
+              <div class="item-benefits__descr">
+                <h3 class="item-benefits__subtittle">ИНДИВИДУАЛЬНЫЙ ПОДХОД</h3>
+                <p class="item-benefits__text">
+                  Все мероприятия по проектировке и подбора материалов обговариваются с вами, учитываются все ваши пожелания и вносятся
+                коррективы в уже заготовленные проекты. Наша задача сделать так, чтобы вы были рады.</p>
+              </div>
+            </div>
+
+            <div class="benefits__item item-benefits">
+              <div class="item-benefits__icon">
+                <i class="fa fa-line-chart benefits-icon"  aria-hidden="true"></i>
+              </div>
+            
+              <div class="item-benefits__descr">
+                <h3 class="item-benefits__subtittle">НАШ ПРОФЕССИОНАЛЬНЫЙ ОПЫТ В ЭТОМ СЕГМЕНТЕ</h3>
+                <p class="item-benefits__text">
+                  Наша компания занимается строительством уже на протяжении 7 лет, в нашей компании работают самые высококвалифицированные
+                  специалисты. Выбирая нас, вы выбираете удобство и надежность.</p>
+              </div>
+            </div>
+
+            <div class="benefits__item item-benefits">
+              <div class="item-benefits__icon">
+                <i class="fa fa-book benefits-icon" aria-hidden="true"></i>
+              </div>
+            
+              <div class="item-benefits__descr">
+                <h3 class="item-benefits__subtittle">ДЕТАЛИЗИРОВАННЫЙ ПРОЕКТ</h3>
+                <p class="item-benefits__text">
+                  Вся рабочая документация для опытных строителей со большим количеством разделов.</p>
+              </div>
+            </div>
+
+            <div class="benefits__item item-benefits">
+              <div class="item-benefits__icon">
+                <i class="fa fa-calendar-check-o benefits-icon" aria-hidden="true"></i>
+              </div>
+            
+              <div class="item-benefits__descr">
+                <h3 class="item-benefits__subtittle">ВОЗМОЖНОСТЬ ВНЕСЕНИЯ ИЗМЕНЕНИЙ</h3>
+                <p class="item-benefits__text">
+                  По ходу разработки дизайна и экстерьера, Вы можете вносить изменения в планировку неограниченное количество раз. Главное
+                  чтобы вы были довольны конечным результатом.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="steps">
+        <div class="container">
+          <h2 class="steps__title">ВСЕ ЭТАПЫ СТРОИТЕЛЬСТВА</h2>
+          <div class="line"></div>
+          <p class="steps__subtittle">Гарантия высокого качества и прозрачные цены на каждом этапе работ</p>
+
+          <div class="steps__slider">
+            <div>
+              <div class="steps__card">
+                <img src="img/steps/card_1.png" alt="" class="card__img">
+                <div class="card__descr">
+                  <span class="card__tittle">Инженерно-геологические изыскания и топосъемка</span>
+                  <p class="card__text">На данном этапе строительства, наша команда определяет: несущую способность грунта, уровень и состав
+                  грунтовых вод, и
+                  множество других характеристик, которые могут пагубно повлиять на строительство вашего дома. После
+                  этого проводится
+                  топографическая съемка, которая позволяет определить самое оптимальное место для вознесения дома и
+                  закладки фундамента.</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="steps__card">
+                <img src="img/steps/card_2.jpg" alt="" class="card__img">
+                <div class="card__descr">
+                  <span class="card__tittle">проектирование</span>
+                  <p class="card__text">Во время проектирования определяется экстерьер, размер и форма дома. Создаются рабочие чертежи, с
+                  указанием материалов и
+                  сметы, по которым будет строиться дом. Данным этапом занимаются наши профессиональные архитекторы и
+                  дизайнеры.</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="steps__card">
+                <img src="img/steps/card_3.jpg" alt="" class="card__img">
+                <div class="card__descr">
+                  <span class="card__tittle">Земляные работы и устройство фундамента</span>
+                  <p class="card__text">Здесь мы начинаем подготовку участка к строительным работам, начинаем разработку траншей и
+                  котлована. К дому подводится
+                  коммуникация и обустраивается фундамент. Это один из самых важных этапов в строительства, потому что
+                  от него зависит
+                  безопасность и надежность вашего дома.</p>
+                </div>
+              </div>
+            </div>
+    
+            <div>
+              <div class="steps__card">
+                <img src="img/steps/card_4.jpg" alt="" class="card__img">
+                <div class="card__descr">
+                  <span class="card__tittle">Строительство надземной</span>
+                  <p class="card__text">Надземная часть включает в себя возведение стен, обустройство кровли, отделочные работы. Вся работа
+                  на этом этапе
+                  производится высококвалифицированными и опытными строителями и отделочниками под качественным
+                  надзором архитектора и
+                  дизайнера.</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="steps__card">
+                <img src="img/steps/card_5.png" alt="" class="card__img">
+                <div class="card__descr">
+                  <span class="card__tittle">Монтаж инженерных систем и коммуникаций</span>
+                  <p class="card__text">На данном этапе строительства производится монтаж всех коммуникаций дома, таких как: электричество,
+                  отопительное
+                  снабжение, канализация, вентиляция, водоснабжение, видеонаблюдение, сигнализация.</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="steps__card">
+                <img src="img/steps/card_6.jpg" alt="" class="card__img">
+                <div class="card__descr">
+                  <span class="card__tittle">Чистовые отделочные
+                  работы</span>
+                  <p class="card__text">На завершающем этапе строительства, после которого вы сможете заселиться в ваш новый дом,
+                  производятся отделочные
+                  работы. Здесь производится качественная отделка стен, пола и потолка, согласно дизайн. Весь этап
+                  проходит под чутким
+                  руководством и надзором дизайнера, чтобы не было отклонений от проекта.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="call">
+        <div class="container">
+          <div class="call__content">
+            <h1 class="call__title">ХОТИТЕ ЗАКАЗАТЬ ЛЮБОЙ ЭТАП СТРОИТЕЛЬСТВА ДОМА
+              ОТДЕЛЬНО?</h1>
+            
+            <p class="call__descr">Оставьте заявку и наш эксперт предоставит подробную информацию</p>
+            
+            <button class="call__btn btn">Заказать звонок</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="build">
+        <div class="container">
+          <h2 class="build__title">СТРОИТЕЛЬСТВО СОВРЕМЕННЫХ ЧАСТНЫХ ДОМОВ</h2>
+          <div class="line"></div>
+          <p class="build__subtitle">Проектируем, производим и строим частные дома и загородные коттеджи в любых архитектурных стилях и из различных
+          материалов: как из традиционных кирпича и дерева, так и из ультрасовременных CLT панелей и модулей.</p>
+          <div class="build__images">
+            <div class="images__top">
+              <img src="img/bg/bg.jpg" alt="" class="top__img">
+              <img src="img/bg/bg1.jpg" alt="" class="top__img">
+              <img src="img/bg/bg2.jpg" alt="" class="top__img">
+            </div>
+            <div class="images__bottom">
+              <div class="bottom__left">
+                <img src="img/bg/bg3.jpg" alt="" class="img__top">
+                <img src="img/bg/bg4.jpg" alt="" class="img__bottom">
+              </div>
+              <div class="bottom__center">
+                <img src="img/bg/bg5.jpg" alt="" class="img__center">
+              </div>
+              <div class="bottom__right">
+                <img src="img/bg/bg6.png" alt="" class="img__top">
+                <img src="img/bg/bg7.png" alt="" class="img__bottom">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="construction">
+        <div class="container">
+          <h2 class="construction__title">
+            СТРОИТЕЛЬСТВО ДОМОВ В МОСКОВСКОЙ ОБЛАСТИ
+          </h2>
+          <div class="line"></div>
+          <p class="construction__text">Все виды проектирования и строительства современных домов в Московской области из кирпича, блоков, монолита и клееного
+          бруса под ключ</p>
+
+          <div class="construction__slider slider-construction">
+            <div>
+              <div class="slider-construction__item slider-construction__item-1">
+                <div class="slider-construction__content">
+                  <p class="slider-construction__text">ПРОЕКТ ДОМА «САН ЛОФТ 3»</p>
+                  <a href="#" class="slider-construction__btn btn">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            
+            <div>
+              <div class="slider-construction__item slider-construction__item-2">
+                <div class="slider-construction__content">
+                  <p class="slider-construction__text">ПРОЕКТ комплекса «отель лила»</p>
+                  <a href="#" class="slider-construction__btn btn">Подробнее</a>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="slider-construction__item slider-construction__item-3">
+                <div class="slider-construction__content">
+                  <p class="slider-construction__text">ПРОЕКТ ДОМА «фрейм хаус 22»</p>
+                  <a href="#" class="slider-construction__btn btn">Подробнее</a>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="slider-construction__item slider-construction__item-4">
+                <div class="slider-construction__content">
+                  <p class="slider-construction__text">ПРОЕКТ ДОМА «фрейм хаус 21»</p>
+                  <a href="#" class="slider-construction__btn btn">Подробнее</a>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="slider-construction__item slider-construction__item-5">
+                <div class="slider-construction__content">
+                  <p class="slider-construction__text">ПРОЕКТ ДОМА «фрейм хаус 20»</p>
+                  <a href="#" class="slider-construction__btn btn">Подробнее</a>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="slider-construction__item slider-construction__item-6">
+                <div class="slider-construction__content">
+                  <p class="slider-construction__text">ПРОЕКТ ДОМА «фрейм хаус 19»</p>
+                  <a href="#" class="slider-construction__btn btn">Подробнее</a>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="slider-construction__item slider-construction__item-7">
+                <div class="slider-construction__content">
+                  <p class="slider-construction__text">ПРОЕКТ ДОМА «фрейм хаус 18»</p>
+                  <a href="#" class="slider-construction__btn btn">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+     
+      <section class="video">
+        <div class="container">
+          <h2 class="video__title">
+            Видеообзоры готовых домов
+          </h2>
+          <div class="line"></div>
+      
+          <div class="video__wrapper wrapper-video">
+            <div>
+              <div class="video__item video__item-1">
+                <div class="video__content">
+                  <p class="video__text">Дом из клеёного бруса 10 на 13м с мансардой и террасой</p>
+                  <a href="#" class="video__btn btn">Подробнее</a>
+                </div>
+              </div>
+            </div>
+      
+            <div>
+              <div class="video__item video__item-2">
+                <div class="video__content">
+                  <p class="video__text">модульные дома | проекты | домокомплекты</p>
+                  <a href="#" class="video__btn btn">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="catalog">
+        <div class="container">
+          <h2 class="catalog__title">Каталог проектов</h2>
+          <div class="catalog__line line"></div>
+          <p class="catalog__subtitle">Мы готовы предложить также индивидуальное решение</p>
+          <div class="catalog__slader slider-catalog">
+            <div>
+              <div class="slider-catalog__slide slide-catalog">
+                <img class="slide-catalog__img slide-catalog__img" src="img/catalog/image-1.jpg" alt="" >
+                <div class="slide-catalog__text">
+                  <h3 class="slide-catalog__title">ПРОЕКТ «Вилла в конаково»</h3>
+                  <p class="slide-catalog__descr">Современная двухэтажная вилла в с террасами и крытым бассейном. Лаконичные линии фасада, натуральные
+                  материалы и панорамные окна органично впишут дом в природный пейзаж.</p>
+                </div>
+                <a href="#" class="slide-catalog__btn btn">Посмотреть проект</a>
+              </div>
+            </div>
+
+            <div>
+              <div class="slider-catalog__slide slide-catalog">
+                <img class="slide-catalog__img slide-catalog__img" src="img/catalog/image-2.png" alt="">
+                <div class="slide-catalog__text">
+                  <h3 class="slide-catalog__title">ПРОЕКТ «Вилла в березки village»</h3>
+                  <p class="slide-catalog__descr">Двухэтажная вилла в современном стиле с террасами и гаражом. Сдержанные цвета фасадов, выверенные
+                  горизонтали композиции и натуральные отделочные материалы. Ничего лишнего.</p>
+                </div>
+                <a href="#" class="slide-catalog__btn btn">Посмотреть проект</a>
+              </div>
+            </div>
+
+            <div>
+              <div class="slider-catalog__slide slide-catalog">
+                <img class="slide-catalog__img slide-catalog__img" src="img/catalog/image-3.jpg" alt="">
+                <div class="slide-catalog__text">
+                  <h3 class="slide-catalog__title">ПРОЕКТ «Вилла в Миллениум Парк»</h3>
+                  <p class="slide-catalog__descr">Современная вилла по проекту архитектурного бюро SL* project. Архитектура дома — это прямые линии
+                  фасада и симметрия, острые углы и панорамные окна.</p>
+                </div>
+                <a href="#" class="slide-catalog__btn btn">Посмотреть проект</a>
+              </div>
+            </div>
+
+            <div>
+              <div class="slider-catalog__slide slide-catalog">
+                <img class="slide-catalog__img slide-catalog__img" src="img/catalog/image-4.jpeg" alt="">
+                <div class="slide-catalog__text">
+                  <h3 class="slide-catalog__title">ПРОЕКТ «Вилла в мелихово парк»</h3>
+                  <p class="slide-catalog__descr">Вилла в современном стиле с бассейном — проект архбюро SL* project. Широкие свесы крыши, панорамные
+                  окна, подчеркнутые острые углы — основные черты стиля этого проекта.</p>
+                </div>
+                <a href="#" class="slide-catalog__btn btn">Посмотреть проект</a>
+              </div>
+            </div>
+            
+            <div>
+              <div class="slider-catalog__slide slide-catalog">
+                <img class="slide-catalog__img slide-catalog__img" src="img/catalog/image-13.jpg" alt="">
+                <div class="slide-catalog__text">
+                  <h3 class="slide-catalog__title">ПРОЕКТ «РИМИНИ»</h3>
+                  <p class="slide-catalog__descr">Архитектура дома по проекту «Римини» — это четкие прямые линии фасада, большие свесы кровли и
+                  отсутствие лишних деталей. Входная группа дома полностью симметрична.</p>
+                </div>
+                <a href="#" class="slide-catalog__btn btn">Посмотреть проект</a>
+              </div>
+            </div>
+            
+            <div>
+              <div class="slider-catalog__slide slide-catalog">
+                <img class="slide-catalog__img slide-catalog__img" src="img/catalog/image-6.jpg" alt="">
+                <div class="slide-catalog__text">
+                  <h3 class="slide-catalog__title">ПРОЕКТ «босфор»</h3>
+                  <p class="slide-catalog__descr">Дом по проекту «Босфор» воплощает в себе лучшие каноны классического стиля в архитектуре.
+                  Гармоничные пропорции добавляют проекту дома</p>
+                </div>
+                <a href="#" class="slide-catalog__btn btn">Посмотреть проект</a>
+              </div>
+            </div>
+
+            <div>
+              <div class="slider-catalog__slide slide-catalog">
+                <img class="slide-catalog__img slide-catalog__img" src="img/catalog/image-7.jpg" alt="">
+                <div class="slide-catalog__text">
+                  <h3 class="slide-catalog__title">ПРОЕКТ «санторини»</h3>
+                  <p class="slide-catalog__descr">Проект «Санторини» — достойный пример классического архитектурного стиля. Правильно выстроенные
+                  пропорции фасада добавляют дому строгости и лаконичности.</p>
+                </div>
+                <a href="#" class="slide-catalog__btn btn">Посмотреть проект</a>
+              </div>
+            </div>
+            
+            <div>
+              <div class="slider-catalog__slide slide-catalog">
+                <img class="slide-catalog__img slide-catalog__img" src="img/catalog/image-1.jpg" alt="">
+                <div class="slide-catalog__text">
+                  <h3 class="slide-catalog__title">ПРОЕКТ «мерано»</h3>
+                  <p class="slide-catalog__descr">Величественный и спокойный стиль ампир был воплощен архитекторами в проекте «Мерано». Четкие линии
+                  гармонично подчеркивают респектабельный вид дома.</p>
+                </div>
+                <a href="#" class="slide-catalog__btn btn">Посмотреть проект</a>
+              </div>
+            </div> 
+            
+            <div>
+              <div class="slider-catalog__slide slide-catalog">
+                <img class="slide-catalog__img slide-catalog__img" src="img/catalog/image-3.jpg" alt="">
+                <div class="slide-catalog__text">
+                  <h3 class="slide-catalog__title">ПРОЕКТ «палермо»</h3>
+                  <p class="slide-catalog__descr">Для проекта дома «Палермо» характерны лаконичный вид и отсутствие лишних декоративных элементов,
+                  облицовка искусственным или натуральным камнем, штукатуркой.</p>
+                </div>
+                <a href="#" class="slide-catalog__btn btn">Посмотреть проект</a>
+              </div>
+            </div>
+            
+            <div>
+              <div class="slider-catalog__slide slide-catalog">
+                <img class="slide-catalog__img slide-catalog__img" src="img/catalog/image-2.png" alt="">
+                <div class="slide-catalog__text">
+                  <h3 class="slide-catalog__title">ПРОЕКТ «родос»</h3>
+                  <p class="slide-catalog__descr">Архитектурно - планировочное решение проекта «Родос» в стиле ArtDeco сочетает в себе изысканные архитектурные
+                  формы с комфортом и функциональностью.</p>
+                </div>
+                <a href="#" class="slide-catalog__btn btn">Посмотреть проект</a>
+              </div>
+            </div>
+            
+            <div>
+              <div class="slider-catalog__slide slide-catalog">
+                <img class="slide-catalog__img slide-catalog__img" src="img/catalog/image-11.jpg" alt="">
+                <div class="slide-catalog__text">
+                  <h3 class="slide-catalog__title">ПРОЕКТ «глория»</h3>
+                  <p class="slide-catalog__descr">Проект «Глория» сочетает в себе лучшие традиции русского классицизма с лёгкими нотками других
+                  стилевых направлений — удивительный баланс строгости и роскоши.</p>
+                </div>
+                <a href="#" class="slide-catalog__btn btn">Посмотреть проект</a>
+              </div>
+            </div>
+
+            <div>
+              <div class="slider-catalog__slide slide-catalog">
+                <img class="slide-catalog__img slide-catalog__img" src="img/catalog/image-4.jpeg" alt="">
+                <div class="slide-catalog__text">
+                  <h3 class="slide-catalog__title">Проект «Кварта»</h3>
+                  <p class="slide-catalog__descr">Проект загородного дома «Кварта» выполнен с соблюдением лучших традиций
+                  западноевропейской архитектуры. Дом выглядит элегантно и респектабельно.</p>
+                </div>
+                <a href="#" class="slide-catalog__btn btn">Посмотреть проект</a>
+              </div>
+            </div>
+          
+            <div>
+              <div class="slider-catalog__slide slide-catalog">
+                <img class="slide-catalog__img slide-catalog__img" src="img/catalog/image-13.jpg" alt="">
+                <div class="slide-catalog__text">
+                  <h3 class="slide-catalog__title">ПРОЕКТ «БОГЕМА»</h3>
+                  <p class="slide-catalog__descr">Простая комфортная планировка современные, умело проработанные фасады, графичные декоры сочетают в
+                  себе фрагменты современного классического стиля.</p>
+                </div>
+                <a href="#" class="slide-catalog__btn btn">Посмотреть проект</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="call-2">
+        <div class="container">
+          <div class="call-2__content">
+            <h1 class="call-2__tittle">УЗНАЙТЕ О ГОТОВЫХ ПРОЕКТАХ ЗАГОРОДНЫХ ДОМОВ ИЛИ ЗАКАЖИТЕ СВОЙ</h1>
+      
+            <button class="call-2__btn btn">Заказать звонок</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="objects">
+        <div class="container">
+          <h2 class="objects__title">ВИДЕО ПО ОБЪЕКТАМ</h2>
+          <div class="objects__line line"></div>
+          <div class="objects__wrapper">
+            <div class="objects__item item-objects">
+              <div class="item-objects__video">
+                <iframe src="https://www.youtube.com/embed/hVoAm8KalV0?controls=0" title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+              <h3 class="item-objects__title">Проект кирпичного коттеджа с английским акцентом, 236 кв.м. - «Бристоль»</h3>
+              <p class="item-objects__descr">Представляем проект просторного двухэтажного дома размером 14.7x15.8 м., с шестью
+                спальными
+                комнатами, большой гостиной
+                и отдельной зоной кухней-столовой.</p>
+            </div>
+            
+            <div class="objects__item item-objects">
+              <div class="item-objects__video">
+                <iframe src="https://www.youtube.com/embed/a02ktbdmzAE?controls=0" title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+              <h3 class="item-objects__title">Облицовка фасада клинкерной плиткой частных домов</h3>
+              <p class="item-objects__descr">Предоставляем комплексные решения по отделки фасадов домов. На этот раз мы предлагаем
+                услуги по
+                облицовки Вашего дома
+                клинкерной плиткой. Поможем и с подбором оптимальных вариантов, и разработаем дизайн проект, и
+                проведем все работы «под
+                ключ» с гарантией результата.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="news">
+        <div class="container">
+          <h2 class="news__title">Новости</h2>
+          <div class="news__line line"></div>
+
+          <div class="news__slider">
+            <div>
+              <div class="news__article article-news__news-1">
+                <div class="article-news__content">
+                  <h3 class="article-news__title">отчет о работах 18 июля 2022 года</h3>
+                  <p class="article-news__descr">Монтаж инженерных сетей и облицовочные работы в КП
+                  «Ново-Николино» </p>
+                  <a href="#" class="article-news__btn btn">подробнее</a>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="news__article article-news__news-2">
+                <div class="article-news__content">
+                  <h3 class="article-news__title">отчет о работах 19 июля 2022 года</h3>
+                  <p class="article-news__descr">Монтаж инженерных сетей и облицовочные работы в КП
+                    «Ново-Николино» </p>
+                  <a href="#" class="article-news__btn btn">подробнее</a>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="news__article article-news__news-3">
+                <div class="article-news__content">
+                  <h3 class="article-news__title">отчет о работах 20 июля 2022 года</h3>
+                  <p class="article-news__descr">Монтаж инженерных сетей и облицовочные работы в КП
+                    «Ново-Николино» </p>
+                  <a href="#" class="article-news__btn btn">подробнее</a>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="news__article article-news__news-4">
+                <div class="article-news__content">
+                  <h3 class="article-news__title">отчет о работах 21 июля 2022 года</h3>
+                  <p class="article-news__descr">Монтаж инженерных сетей и облицовочные работы в КП
+                    «Ново-Николино» </p>
+                  <a href="#" class="article-news__btn btn">подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="improve">
+        <div class="container">
+          <h2 class="improve__title">БЛАГОУСТРОИМ ВАШ ЗАГОРОДНЫЙ УЧАСТОК</h2>
+
+          <div class="improve__line line"></div>
+          <p class="improve__descr">Вам будут доступны идеи лучших ландшафтных дизайнеров и архитекторов с богатым опытом создания проектов в разных стилях.
+          Мы даем гарантию 2 года на все работы.</p>
+
+          <div class="improve__cards">
+            <div class="improve__card card-improve improve__card-1">
+              <div class="card-improve__content">
+                <h2 class="card-improve__title">мощение брусчаткой</h2>
+                <p class="card-improve__decr">Поможем подобрать и уложить брусчатку, которая подчеркнёт красоту вашего участка и
+                  идеально
+                  подойдет вашему загородному дому.</p>
+                <a href="#" class="card-improve__btn btn">Подробнее</a>
+              </div>
+            </div>
+
+            <div class="improve__card card-improve improve__card-2">
+              <div class="card-improve__content">
+                <h2 class="card-improve__title">БАНИ, БЕСЕДКИ, БАРБЕКЮ</h2>
+                <p class="card-improve__decr">Создадим уютные беседки, соорудим декоративные фонтаны, камины, перголы, барбекю и многое
+                  другое
+                  — ваш участок преобразится буквально за несколько дней.</p>
+                <a href="#" class="card-improve__btn btn">Подробнее</a>
+              </div>
+            </div>
+
+            <div class="improve__card card-improve improve__card-3">
+              <div class="card-improve__content">
+                <h2 class="card-improve__title">Кованые изделия</h2>
+                <p class="card-improve__decr">Более 9 видов кованых изделий ручной работы — во время первой встречи с нашим экспертом вы
+                  уже
+                  получите первые наброски вашего будущего кованого изделия.</p>
+                <a href="#" class="card-improve__btn btn">Подробнее</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="clients">
+        <div class="container">
+          <h2 class="clients__title">НАШИ КЛИЕНТЫ - ИЗВЕСТНЫЕ КОМПАНИИ</h2>
+          <div class="clients__line line"></div>
+          <p class="clients__text">Мы также будем рады и новому сотрудничеству</p>
+
+          <div class="clients__company company-clients">
+            <a href="#" class="compamy-clients__link">
+              <img class="compamy-clients__logo-1" src="img/clients/logo-1.jpg" alt="">
+            </a>
+
+            <a href="#" class="compamy-clients__link">
+              <img class="compamy-clients__logo-2" src="img/clients/logo-2.jpg" alt="">
+            </a>
+
+            <a href="#" class="compamy-clients__link">
+              <img class="compamy-clients__logo-3" src="img/clients/logo-3.jpg" alt="">
+            </a>
+
+            <a href="#" class="compamy-clients__link">
+              <img class="compamy-clients__logo-4" src="img/clients/logo-4.jpg" alt="">
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="consultation">
+          <h2 class="consultation__title">ПОЛУЧИТЕ КОНСУЛЬТАЦИЮ ЭКСПЕРТА «WINERBERGER»</h2>
+          <div class="consultation__line line"></div>
+          
+          <!-- Form -->
+
+          <div class="consultation__form">
+              <div class="wrapper">
+                <div class="form">
+                  <form class="form__body" action="#" id="form">
+                    <h2 class="form__title">Обратная связь</h2>
+                    <div class="form__text">
+                      Напишите нам сообщение, и мы с Вами свяжемся!
+                    </div>
+                    <div class="form__item">
+                      <label class="form__label " for="formName">Имя*:</label>
+                      <input class="form__input _req" id="formName" type="text" name="name" />
+                    </div>
+              
+                    <div class="form__item">
+                      <label class="form__label" for="formPhone">Телефон*:</label>
+                      <input class="form__input _req _phone" id="formPhone" type="tel" name="phone" />
+                    </div>
+              
+                    <div class="form__item">
+                      <label class="form__label" for="formEmail">E-mail*:</label>
+                      <input class="form__input _req _email" id="formEmail" type="text" name="email" />
+                    </div>
+              
+                    <div class="form__item">
+                      <label class="form__label" for="forMessage">Сообщение:</label>
+                      <textarea class="form__input" name="message" id="forMessage"></textarea>
+                    </div>
+              
+                    <div class="form__item">
+                      <div class="checkbox">
+                        <input class="checkbox__input _req" id="formAgreement" type="checkbox" name="agreement" checked />
+                        <label class="checkbox__label" for="formAgreement"><span>Нажимая кнопку «Отправить», я даю свое согласие на
+                            обработку
+                            моих персональных данных, в соответствии с Федеральным законом
+                            от 27.07.2006 года №152-ФЗ «О персональных данных», на
+                            условиях и для целей, определенных в Согласии на обработку
+                            персональных данных*</span></label>
+                      </div>
+                    </div>
+              
+                    <button class="form__button" type="submit">Отправить</button>
+                  </form>
+                </div>
+              </div>
+          </div>
+      </section>
+    </main>
+    
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__info">
+            <a href="#" class="footer__logo">
+              <img class="logo__img" src="img/logo.png" alt="logo">
+            </a>
+          
+            <ul class="footer__contacts contacts-footer">
+              <li class="contacts-footer__phone">
+                <a href="tell:+74955328087">
+                  <i class="fa fa-phone-square" aria-hidden="true"><span>8 (495) 532-80-87</span></i>
+                </a>
+              </li>
+          
+              <li class="contacts-footer__time">
+                <i class="fa fa-calendar" aria-hidden="true"><span>ПН-СБ: 09.00 -18.00</span></i>
+              </li>
+          
+              <li class="contacts-footer__mail">
+                <a href="email:info@stone-wood-house.ru">
+                  <i class="fa fa-envelope" aria-hidden="true"><span>info@stone-wood-house.ru</span></i>
+                </a>
+              </li>
+            </ul>
+          
+            <ul class="footer__social social-footer">
+              <li class="social__link">
+                <a class="social__youtube" href="https://www.youtube.com/channel/UCZIs0bRh2UB7gFpLxaoSATw?app=desktop">
+                  <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="social__link">
+                <a class="social__tg" href="https://t.me/stonewoodhouse">
+                  <i class="fa fa-telegram" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="social__link">
+                <a class="social__vk" href="https://vk.com/stonewoodhouse">
+                  <i class="fa fa-vk" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          
+          <iframe class="footer__map" src="https://yandex.ru/map-widget/v1/?z=12&amp;ol=biz&amp;oid=1525605179" frameborder="0">
+          </iframe>
+        </div>
+        
+      </div>
+      <div class="footer__copy">© 2022 Все права защищены.</div>
+    </footer>
+
+
+
+    <script src="js/form.js"></script>
+    <script src="libs/jquery.min.js"></script>
+    <script src="libs/slick/slick.min.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>

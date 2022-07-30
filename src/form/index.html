@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="form.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="form">
+      <form class="form__body" action="#" id="form">
+        <h2 class="form__title">Обратная связь</h2>
+        <div class="form__text">
+          Напишите нам сообщение, и мы с Вами свяжемся!
+        </div>
+        <div class="form__item">
+          <label class="form__label " for="formName">Имя*:</label>
+          <input class="form__input _req" id="formName" type="text" name="name" />
+        </div>
+    
+        <div class="form__item">
+          <label class="form__label" for="formPhone">Телефон*:</label>
+          <input class="form__input _req _phone" id="formPhone" type="tel" name="phone" />
+        </div>
+    
+        <div class="form__item">
+          <label class="form__label" for="formEmail">E-mail*:</label>
+          <input class="form__input _req _email" id="formEmail" type="text" name="email" />
+        </div>
+    
+        <div class="form__item">
+          <label class="form__label" for="forMessage">Сообщение:</label>
+          <textarea class="form__input" name="message" id="forMessage"></textarea>
+        </div>
+    
+        <div class="form__item">
+          <div class="checkbox">
+            <input class="checkbox__input _req" id="formAgreement" type="checkbox" name="agreement" checked />
+            <label class="checkbox__label" for="formAgreement"><span>Нажимая кнопку «Отправить», я даю свое согласие на
+                обработку
+                моих персональных данных, в соответствии с Федеральным законом
+                от 27.07.2006 года №152-ФЗ «О персональных данных», на
+                условиях и для целей, определенных в Согласии на обработку
+                персональных данных*</span></label>
+          </div>
+        </div>
+    
+        <button class="form__button" type="submit">Отправить</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="form.js"></script>
+</body>
+
+</html>
