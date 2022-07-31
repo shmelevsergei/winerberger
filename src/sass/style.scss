@@ -11,30 +11,28 @@ html body {
 }
 
 h1 {
-  font-weight: 600;
   font-size: 3em;
   line-height: 1.3;
 }
 
 h2 {
-  font-weight: 600;
   font-size: 2em;
   line-height: 1.2;
 }
 
 h3 {
-  font-weight: 600;
   font-size: 1.2em;
   line-height: 1.1;
 }
 
 h1, h2, h3 {
   text-transform: uppercase;
+  font-weight: 600;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 1220px;
+  max-width: 1200px;
   padding: 0 10px;
 }
 
@@ -112,6 +110,24 @@ h1, h2, h3 {
   background: #800000;
   border-radius: 10px;
   margin: 40px auto 40px auto;
+}
+
+//------ Burger --------//
+.header__burger.active {
+
+  &::before {
+    transform: rotate(45deg);
+    top: 19px;
+    left:9px;
+  }
+  &::after {
+    transform: rotate(-45deg);
+    bottom: 19px;
+    left: 9px;
+  }
+  span {
+    transform: scale(0);
+  }
 }
 
 
@@ -213,13 +229,22 @@ h1, h2, h3 {
   }
 }
 
+//----- Burger ------//
+
+.header__burger {
+  display: none;
+}
+
 //---- Menu -------
 
 .menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 1.5rem 4rem 1.2rem 4rem;
   background: #800000;
+  column-gap: 25px;
+  row-gap: 25px;
+  flex-wrap: wrap;
 
   &__item {
     position: relative;
@@ -283,7 +308,7 @@ h1, h2, h3 {
 
   &__wrapper {
     position: absolute;
-    width: 50%;
+    width: 700px;
     margin: 10rem auto;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
@@ -317,7 +342,9 @@ h1, h2, h3 {
 
   .slick-prev,
   .slick-next {
-    display: none;
+    &:before {
+      display: none;
+    }
   }
 }
 
@@ -486,7 +513,7 @@ h1, h2, h3 {
     padding: 0 10px;
   }
 
-  &__title {
+  &__tittle {
     text-transform: uppercase;
     font-weight: 600;
     line-height: 1.1;
@@ -549,84 +576,95 @@ h1, h2, h3 {
 .build {
   padding: 80px 0;
   text-align: center;
-  * img {
-    border-radius: 10px;
-    transition: 1s;
-    &:hover {
-      transform: scale(1.1);
-      box-shadow: 0 0 10px #38040473;
+  &__images {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  }
+  .images {
+    &__top {
+      display: flex;
+      column-gap: 20px;
+    }
+    &__bottom {
+      display: flex;
+      column-gap: 20px;
     }
   }
-  &__title {
-    display: inline-block;
-    width: 700px;
+
+  .build-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.397);
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+    &:hover {
+      transform: scale(1.5);
+      
+    }
+  }
+  
+  .img__top-1 {
+    width: 300px;
+    height: 200px;
+    background-image: url('/img/bg/bg1.jpg');
   }
 
-  &__subtitle {
-    font-size: 1.2em;
-    line-height: 1.1em;
-    width: 800px;
-    display: inline-block;
-    margin-bottom: 30px;
+  .img__top-2 {
+    width: 300px;
+    height: 200px;
+    background-image: url('/img/bg/bg2.jpg');
   }
 
-}
-
-.images {
-  &__top {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 250px;
-    column-gap: 25px;
-    
+  .img__top-3 {
+    width: 300px;
+    height: 200px;
+    background-image: url('/img/bg/bg3.jpg');
   }
 
-  &__bottom {
-    margin-top: 25px;
+  .left-bottom {
     display: flex;
-    justify-content: space-between;
-    column-gap: 25px;
-  }
-}
-
-.top {
-  &__img {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-.bottom {
-  &__left {
-    width: 25%;
-    height: 300px;
+    flex-direction: column;
+    row-gap: 20px;
+    &__top {
+      width: 200px;
+      height: 200px;
+      background-image: url('/img/bg/bg4.jpg');
+    }
+    &__bottom {
+      width: 200px;
+      height: 200px;
+      background-image: url('/img/bg/bg5.jpg');
+    }
   }
 
-  &__center {
-    width: 50%;
+  .right-bottom {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    &__top {
+      width: 200px;
+      height: 200px;
+      background-image: url('/img/bg/bg6.png');
+    }
+
+    &__bottom {
+      width: 200px;
+      height: 200px;
+      background-image: url('/img/bg/bg7.png');
+    }
   }
 
-  &__right {
-    width: 25%;
-  }
-}
-
-.img {
-  &__top {
-    width: 100%;
-    height: 200px;
+  .img__center {
+    width: 500px;
+    height: 420px;
+    background-image: url('/img/bg/bg.jpg');
   }
 
-  &__bottom {
-    width: 100%;
-    margin-top: 25px;
-    height: 200px;
-  }
-
-  &__center {
-    width: 100%;
-    height: 100%;
-  }
 }
 
 //---------Construction ---------//
@@ -757,7 +795,7 @@ h1, h2, h3 {
   text-align: center;
   &__title {
     display: inline-block;
-    width: 550px;
+    max-width: 550px;
   }
 
   &__wrapper {
@@ -792,7 +830,7 @@ h1, h2, h3 {
   &__text {
     color: #fff;
     text-transform: uppercase;
-    width: 150px;
+    max-width: 150px;
     font-weight: 600;
     line-height: 1.2;
   }
@@ -821,13 +859,12 @@ h1, h2, h3 {
 .catalog {
   padding: 80px 0;
   text-align: center;
-  &__title {}
 
   &__subtitle {
     font-size: 1.2em;
   }
 
-  &__slader {
+  &__slider {
     margin-top: 30px;
 
     .slick-prev {
@@ -1239,8 +1276,6 @@ h1, h2, h3 {
     
   }
 
-  &__time {}
-
   &__mail {
     span {
       &:hover {
@@ -1250,17 +1285,8 @@ h1, h2, h3 {
   }
 }
 
-.social {
-  &__link {}
-
-  &__youtube {}
-
-  &__tg {}
-
-  &__vk {}
-}
-
 
 // Импортируем блоки //
 
 @import 'form';
+@import 'mobile';

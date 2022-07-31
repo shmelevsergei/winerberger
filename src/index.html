@@ -83,7 +83,7 @@
     <meta name="twitter:image" content=" ">
 
   </head>
-  <body>
+  <body class="body">
     <header class="header">
       <div class="container">
         <div class="header__info info-header">
@@ -134,29 +134,36 @@
         </div>
       </div>
       
-      <ul class="header__menu menu">
-        <li class="menu__item">
-          <a class="menu__link" href="#" >Этапы строительства</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#" >Строим сейчас</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#" >Готовые дома</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#" >Каталог проектов</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#" >Новости</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#" >Wienerberger</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#" >Контакты</a>
-        </li>
-      </ul>
+      <div class="header__burger">
+        <span></span>
+      </div>
+
+      <nav class="header__menu">
+        <ul class="menu__list menu">
+          <li class="menu__item">
+            <a class="menu__link" href="#">Этапы строительства</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Строим сейчас</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Готовые дома</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Каталог проектов</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Новости</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Wienerberger</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      
     </header>
 
     <main class="main">
@@ -456,21 +463,21 @@
           материалов: как из традиционных кирпича и дерева, так и из ультрасовременных CLT панелей и модулей.</p>
           <div class="build__images">
             <div class="images__top">
-              <img src="img/bg/bg.jpg" alt="" class="top__img">
-              <img src="img/bg/bg1.jpg" alt="" class="top__img">
-              <img src="img/bg/bg2.jpg" alt="" class="top__img">
+              <div class="top__img img__top-1 build-img"></div>
+              <div class="top__img img__top-2 build-img"></div>
+              <div class="top__img img__top-3 build-img"></div>
             </div>
             <div class="images__bottom">
-              <div class="bottom__left">
-                <img src="img/bg/bg3.jpg" alt="" class="img__top">
-                <img src="img/bg/bg4.jpg" alt="" class="img__bottom">
+              <div class="bottom__left left-bottom">
+                <div class="left-bottom__top build-img"></div>
+                <div alt="" class="left-bottom__bottom build-img"></div>
               </div>
               <div class="bottom__center">
-                <img src="img/bg/bg5.jpg" alt="" class="img__center">
+                <div class="img__center build-img"></div>
               </div>
-              <div class="bottom__right">
-                <img src="img/bg/bg6.png" alt="" class="img__top">
-                <img src="img/bg/bg7.png" alt="" class="img__bottom">
+              <div class="bottom__right right-bottom">
+                <div class="right-bottom__top build-img"></div>
+                <div class="right-bottom__bottom build-img"></div>
               </div>
             </div>
           </div>
@@ -587,7 +594,7 @@
           <h2 class="catalog__title">Каталог проектов</h2>
           <div class="catalog__line line"></div>
           <p class="catalog__subtitle">Мы готовы предложить также индивидуальное решение</p>
-          <div class="catalog__slader slider-catalog">
+          <div class="catalog__slider slider-catalog">
             <div>
               <div class="slider-catalog__slide slide-catalog">
                 <img class="slide-catalog__img slide-catalog__img" src="img/catalog/image-1.jpg" alt="" >
@@ -918,7 +925,7 @@
           <h2 class="consultation__title">ПОЛУЧИТЕ КОНСУЛЬТАЦИЮ ЭКСПЕРТА «WINERBERGER»</h2>
           <div class="consultation__line line"></div>
           
-          <!-- Form -->
+
 
           <div class="consultation__form">
               <div class="wrapper">
@@ -1023,7 +1030,6 @@
 
 
 
-    <script src="js/form.js"></script>
     <script src="libs/jquery.min.js"></script>
     <script src="libs/slick/slick.min.js"></script>
     <script src="js/app.js"></script>
