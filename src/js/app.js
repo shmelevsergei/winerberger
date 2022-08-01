@@ -47,7 +47,8 @@ $(function() {
     cssEase: 'linear',
     swipe: false,
     pauseOnHover: false,
-    pauseOnFocus: false
+    pauseOnFocus: false,
+    arrows: false
   });
 
   $('.steps__slider').slick({
@@ -159,17 +160,43 @@ $(function() {
     ]
   });
 
+
+  var h_hght = 125; // высота шапки
+
+  var h_mrg = 0;    // отступ когда шапка уже не видна
+  $(window).scroll(function(){
+
+    var top = $(this).scrollTop();
+
+    var elem = $('.header__menu');
+
+    if (top+h_mrg < h_hght) {
+
+      elem.css('top', (h_hght-top));
+
+    } else {
+
+      elem.css('top', h_mrg);
+
+    }
+  });
 })
+
+
+
+
 
 window.addEventListener('DOMContentLoaded', function(){
   //Burger active
   let burger = document.querySelector('.header__burger'),
       menu = document.querySelector('.header__menu'),
-      content = document.querySelector('.body'); 
+      content = document.querySelector('.body'),
+      menuList = document.querySelector('.menu__list')
 
     function toggleActive() {
       burger.addEventListener('click', () => {
         burger.classList.toggle('active');
+        menuList.classList.toggle('active');
         menu.classList.toggle('active');
         content.classList.toggle('lock');
       })
@@ -263,4 +290,7 @@ window.addEventListener('DOMContentLoaded', function(){
   }
 });
 
+
+
+  
 

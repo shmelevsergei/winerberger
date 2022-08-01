@@ -5,7 +5,7 @@
 
 // Общие настройки
 html body {
-  overflow-x: hidden;
+  // overflow-x: hidden;
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
 }
@@ -73,7 +73,7 @@ h1, h2, h3 {
 }
 
 .draggable {
-  width: 1000px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -130,12 +130,26 @@ h1, h2, h3 {
   }
 }
 
+.header__burger {
+  display: block;
+}
+
 
 //header
 
 .header {
+
   &__info {
     padding: 1.5rem 0;
+
+  }
+  &__menu {
+    position: fixed;
+    top: 125px;
+    z-index: 3;
+    padding: 1.5rem 4rem 1.2rem 4rem;
+    background: #800000;
+    width: 100%;
   }
   
 }
@@ -144,6 +158,7 @@ h1, h2, h3 {
   justify-content: space-between;
   align-items: center;
   column-gap: 2rem;
+  height: 125px;
   &__logo {
     display: inline-block;
     max-width: 15rem;
@@ -229,19 +244,11 @@ h1, h2, h3 {
   }
 }
 
-//----- Burger ------//
-
-.header__burger {
-  display: none;
-}
-
 //---- Menu -------
 
 .menu {
   display: flex;
   justify-content: center;
-  padding: 1.5rem 4rem 1.2rem 4rem;
-  background: #800000;
   column-gap: 25px;
   row-gap: 25px;
   flex-wrap: wrap;
