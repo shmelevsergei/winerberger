@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="libs/slick/slick.css">
-    <link rel="stylesheet" href="libs/slick/slick-theme.css">
-    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/slick/slick.css">
+    <link rel="stylesheet" href="/libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="/css/style.min.css?<?php echo time();?>" type="text/css"/>
 
     
     <title>Winerberger</title>
@@ -53,7 +53,11 @@
     
     <!-- S= Задержка в секундах
         URL= Адрес сайта/страницы -->
-    
+
+    <!-- Сброс кэша при загрузки страницы -->
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+
     
     <!-- локализация сайта, для русскоязычного сайта ru_RU -->
     <meta property="og:locale" content="ru_RU">
@@ -111,7 +115,7 @@
           </ul>
             
           <div class="info-header__connection">
-            <button class="info-header__button btn">Задать вопрос</button>
+            <a href="#form" class="info-header__button btn">Задать вопрос</a>
             <ul class="info-header__social">
               <li class="social__link">
                 <a class="social__youtube" href="https://www.youtube.com/channel/UCZIs0bRh2UB7gFpLxaoSATw?app=desktop">
@@ -141,25 +145,25 @@
     
         <ul class="menu__list menu">
           <li class="menu__item">
-            <a class="menu__link" href="#">Этапы строительства</a>
+            <a href="#steps" class="menu__link">Этапы строительства</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Строим сейчас</a>
+            <a href="#construction" class="menu__link">Строим сейчас</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Готовые дома</a>
+            <a href="#video" class="menu__link">Готовые дома</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Каталог проектов</a>
+            <a href="#catalog" class="menu__link">Каталог проектов</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Новости</a>
+            <a href="#news" class="menu__link">Новости</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Wienerberger</a>
+            <a class="menu__link" href="wienerberger.html">Wienerberger</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Контакты</a>
+            <a href="#footer" class="menu__link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -200,7 +204,7 @@
             <div class="promo__descr">
               Сотрудничаем с ведущими и зарекомендовавшими себя частными архитекторами и архитектурными бюро
             </div>
-            <button class="promo__button btn">Заказать звонок</button>
+            <a href="#form" class="promo__button btn">Заказать звонок</a>
           </div>
         </div>
       </section>
@@ -349,7 +353,7 @@
         </div>
       </section>
 
-      <section class="steps">
+      <section class="steps" id="steps">
         <div class="container">
           <h2 class="steps__title">ВСЕ ЭТАПЫ СТРОИТЕЛЬСТВА</h2>
           <div class="line"></div>
@@ -450,7 +454,7 @@
             
             <p class="call__descr">Оставьте заявку и наш эксперт предоставит подробную информацию</p>
             
-            <button class="call__btn btn">Заказать звонок</button>
+            <a href="#form" class="call__btn btn">Заказать звонок</a>
           </div>
         </div>
       </section>
@@ -484,7 +488,7 @@
         </div>
       </section>
 
-      <section class="construction">
+      <section class="construction" id="construction">
         <div class="container">
           <h2 class="construction__title">
             СТРОИТЕЛЬСТВО ДОМОВ В МОСКОВСКОЙ ОБЛАСТИ
@@ -560,7 +564,7 @@
         </div>
       </section>
      
-      <section class="video">
+      <section class="video" id="video">
         <div class="container">
           <h2 class="video__title">
             Видеообзоры готовых домов
@@ -589,7 +593,7 @@
         </div>
       </section>
 
-      <section class="catalog">
+      <section class="catalog" id="catalog">
         <div class="container">
           <h2 class="catalog__title">Каталог проектов</h2>
           <div class="catalog__line line"></div>
@@ -759,7 +763,7 @@
           <div class="call-2__content">
             <h1 class="call-2__tittle">УЗНАЙТЕ О ГОТОВЫХ ПРОЕКТАХ ЗАГОРОДНЫХ ДОМОВ ИЛИ ЗАКАЖИТЕ СВОЙ</h1>
       
-            <button class="call-2__btn btn">Заказать звонок</button>
+            <a href="#form" class="call-2__btn btn">Заказать звонок</a>
           </div>
         </div>
       </section>
@@ -800,7 +804,7 @@
         </div>
       </section>
 
-      <section class="news">
+      <section class="news" id="news">
         <div class="container">
           <h2 class="news__title">Новости</h2>
           <div class="news__line line"></div>
@@ -929,7 +933,7 @@
 
           <div class="consultation__form">
               <div class="wrapper">
-                <div class="form">
+                <div class="form" id="form">
                   <form class="form__body" action="#" id="form">
                     <h2 class="form__title">Обратная связь</h2>
                     <div class="form__text">
@@ -975,7 +979,7 @@
       </section>
     </main>
     
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="container">
         <div class="footer__wrapper">
           <div class="footer__info">
@@ -1030,8 +1034,8 @@
 
 
 
-    <script type="text/javascript" src="libs/jquery.min.js"></script>
-    <script src="libs/slick/slick.min.js"></script>
-    <script src="js/app.js"></script>
+    <script src="/libs/jquery.min.js" type="text/javascript" ></script>
+    <script src="/libs/slick/slick.min.js"></script>
+    <script src="/js/app.js"></script>
   </body>
 </html>

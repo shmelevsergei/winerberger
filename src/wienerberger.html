@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/slick/slick.css">
+    <link rel="stylesheet" href="/libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="/css/style.min.css?<?php echo time();?>" type="text/css"/>
+
+    
+    <title>Wienerberger</title>
+    <!-- фиксированная ширина -->
+    <!-- <meta name="viewport" content="width=1170">   -->
+    <!-- Отключает принудительную ссылку у номера телефона на iOS -->
+    <meta name="format-detection" content="telephone=no">
+    
+    
+    
+    <!-- SEO - оптимизация -->
+    <!-- Краткое описание страницы  -->
+    <meta name="description" content=" ">
+    
+    <!-- Ключевые слова страницы  -->
+    <meta name="keywords" content=" ">
+    
+    <!-- Управление доступом поисковых роботов к странице -->
+    <!-- <meta name="robots" content=""> -->
+    
+    <!-- По умолчанию страница индексируется поисковыми система, то есть этот мета тег дополнительно указывать не нужно. Но если задача стоит запретить либо ограничить индексацию, то существуют следующие значения:
+        none – запретить индексацию страницы полностью.
+        noindex – запретить индексацию содержимого страницы.
+        nofollow – игнорировать ссылки в пределах веб-страницы. 
+        noimageindex - запретить индексацию присутствующих на странице изображений
+        noarchive - запретить  вывод в результатах поиска ссылки «Сохраненная копия»
+        nosnippet - запретить  вывод в поисковой выдаче под названием страницы фрагмента текста, описывающего её содержание.
+        Значения указываются через запятую. -->
+    
+    
+    <!-- Технические -->
+    <!-- Автор страницы -->
+    <meta name="Author" content=" ">
+    
+    <!-- Авторские права -->
+    <meta name="Copyright" content=" ">
+    
+    <!-- Адрес автора -->
+    <meta name="Address" content=" ">
+    
+    <!-- Редирект (перезагрузка) страницы. Задержка в секундах; url=Адрес сайта/страницы -->
+    <meta http-equiv="refresh" content="S; url=URL">
+    
+    <!-- S= Задержка в секундах
+        URL= Адрес сайта/страницы -->
+
+    <!-- Сброс кэша при загрузки страницы -->
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+
+    
+    <!-- локализация сайта, для русскоязычного сайта ru_RU -->
+    <meta property="og:locale" content="ru_RU">
+    <!-- тип контента, по умолчанию используется article -->
+    <meta property="og:type" content="article">
+    <!-- заголовок страницы, который будет выводится в записи социальной сети -->
+    <meta property="og:title" content=" ">
+    <!-- описание страницы -->
+    <meta property="og:description" content=" ">
+    <!-- ссылка на изображение, которое будет публиковаться в записи -->
+    <meta property="og:image" content=" ">
+    <!-- ссылка на текущую страницу -->
+    <meta property="og:url" content=" ">
+    <!-- название сайта -->
+    <meta property="og:site_name" content=" ">
+    
+    
+    <!-- Тип карты, по умолчанию используется summary -->
+    <meta name="twitter:card" content="summary">
+    <!-- Имя/логин автора -->
+    <meta name="twitter:site" content=" ">
+    <!-- Название страницы -->
+    <meta name="twitter:title" content=" ">
+    <!-- Описание страницы -->
+    <meta name="twitter:description" content=" ">
+    <!-- Cсылка на изображение -->
+    <meta name="twitter:image" content=" ">
+
+  </head>
+  <body class="body">
+    <header class="header">
+      <div class="container">
+        <div class="header__info info-header">
+          <a href="#" class="info-header__logo">
+            <img src="img/logo.png" alt="logo">
+          </a>
+          
+
+          <ul class="info-header__contacts">
+            <li class="contacts__phone"> 
+              <a href="tell:+74955328087">
+                <i class="fa fa-phone-square" aria-hidden="true"><span>8 (495) 532-80-87</span></i>
+              </a>
+            </li>
+
+            <li class="contacts__time">
+              <i class="fa fa-calendar" aria-hidden="true"><span>ПН-СБ: 09.00 -18.00</span></i>
+            </li>
+            
+            <li class="contacts__mail">
+              <a href="email:info@stone-wood-house.ru"> 
+                <i class="fa fa-envelope" aria-hidden="true"><span>info@stone-wood-house.ru</span></i>
+              </a>
+            </li>
+          </ul>
+            
+          <div class="info-header__connection">
+            <a href="#form" class="info-header__button btn">Задать вопрос</a>
+            <ul class="info-header__social">
+              <li class="social__link">
+                <a class="social__youtube" href="https://www.youtube.com/channel/UCZIs0bRh2UB7gFpLxaoSATw?app=desktop">
+                  <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="social__link">
+                <a class="social__tg" href="https://t.me/stonewoodhouse">
+                  <i class="fa fa-telegram" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="social__link">
+                <a class="social__vk" href="https://vk.com/stonewoodhouse">
+                  <i class="fa fa-vk" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+            
+        </div>
+      </div>
+
+      <nav class="header__menu">
+        <div class="header__burger">
+          <span></span>
+        </div>
+    
+        <ul class="menu__list menu">
+          <li class="menu__item">
+            <a href="index.html" class="menu__link">Главная</a>
+          </li>
+          <li class="menu__item">
+            <a href="#specialisation" class="menu__link">Специализация</a>
+          </li>
+          <li class="menu__item">
+            <a href="#porotherm" class="menu__link">Преимущества</a>
+          </li>
+          <li class="menu__item">
+            <a href="#assortment" class="menu__link">Ассортимент Porothern</a>
+          </li>
+          <li class="menu__item">
+            <a href="#certificate" class="menu__link">Сертификаты</a>
+          </li>
+          <li class="menu__item">
+            <a href="#wienerberger" class="menu__link">о Wienerberger</a>
+          </li>
+          <li class="menu__item">
+            <a href="#unistroy" class="menu__link">о Unistroy</a>
+          </li>
+          <li class="menu__item">
+            <a href="#footer" class="menu__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      
+    </header>
+
+    <main class="main">
+      <section class="brands">
+        <div class="container">
+          <div class="brands__wrapper">
+            <div class="brands__logo">
+              <img src="/img/brands/porotherm.jpg" alt="porotherm">
+            </div>
+            <div class="brands__logo">
+              <img src="/img/brands/terca.jpg" alt="terca">
+            </div>
+            <div class="brands__logo">
+              <img src="/img/brands/penter.jpg" alt="penter">
+            </div>
+            <div class="brands__logo">
+              <img src="/img/brands/koramic.jpg" alt="koramic">
+            </div>
+            <div class="brands__logo">
+              <img src="/img/brands/tondash.jpg" alt="tondash">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!------- Promo ------>
+      <section class="promo promo__wienerberger">
+        <div class="promo__slider">
+          <div>
+            <div class="promo__bg promo__bg-7"></div>
+          </div>
+        </div>
+        
+        <div class="promo__wrapper wrapper-promo__wienerberger">
+          <h1 class="promo__tittle">
+            КОНЦЕРН WIENERBERGER — ПРОИЗВОДИТЕЛЬ КЕРАМИЧЕСКИХ СТРОИТЕЛЬНЫХ МАТЕРИАЛОВ
+          </h1>
+        </div>
+      </section>
+      
+      
+      <section class="about about__wienerberger">
+        <div class="container">
+          <div class="about__wrapper wrapper-about__wienerberger">
+            <div class="about__descr">
+              <div class="about__line line"></div>
+              <p class="about__text">Концерн Wienerberger вырос из небольшого австрийского предприятия, основанного Алоисом Мисбахом в 1819 году в районе
+              Винерберг г. Вены. Со временем местная австрийская компания превратилась в мирового лидера по производству керамических
+              строительных материалов. На сегодняшний день концерн Wienerberger насчитывает 195 заводов в 30 странах мира и является
+              крупнейшим производителем строительной керамики. На заводах Wienerberger производят: крупноформатные керамические блоки
+              Porotherm, облицовочный кирпич Terca, керамическую черепицу Koramic и Tondach, клинкерную брусчатку Penter. В дополнение
+              к строительной керамике концерн предлагает сопутствующие материалы: кладочные смеси, штукатурки, базальтовую сетку и
+              прочее.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="benefits benefits-achievements__wienerberger">
+        <div class="container">
+          <h2 class="benefits__tittle">
+            ДОСТИЖЕНИЯ WIENERBERGER
+          </h2>
+
+          <div class="benefits__wrapper wrapper-benefits__wienerberger">
+            <div class="benefits__item item-benefits">
+              <div class="item-benefits__icon">
+                <i class="fa fa-handshake-o benefits-icon" aria-hidden="true"></i>
+              </div>
+
+              <div class="item-benefits__descr">
+                <h3 class="item-benefits__subtittle">ИНДИВИДУАЛЬНЫЙ ПОДХОД</h3>
+                <p class="item-benefits__text">
+                  Все мероприятия по проектировке и подбора материалов обговариваются с вами, учитываются все ваши пожелания и вносятся
+                коррективы в уже заготовленные проекты. Наша задача сделать так, чтобы вы были рады.</p>
+              </div>
+            </div>
+
+            <div class="benefits__item item-benefits">
+              <div class="item-benefits__icon">
+                <i class="fa fa-line-chart benefits-icon"  aria-hidden="true"></i>
+              </div>
+            
+              <div class="item-benefits__descr">
+                <h3 class="item-benefits__subtittle">НАШ ПРОФЕССИОНАЛЬНЫЙ ОПЫТ В ЭТОМ СЕГМЕНТЕ</h3>
+                <p class="item-benefits__text">
+                  Наша компания занимается строительством уже на протяжении 7 лет, в нашей компании работают самые высококвалифицированные
+                  специалисты. Выбирая нас, вы выбираете удобство и надежность.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="steps steps-specialization__wienerberger" id="specialisation">
+        <div class="container">
+          <h2 class="steps__title">СПЕЦИАЛИЗАЦИЯ КОНЦЕРНА WIENERBERGER</h2>
+          <div class="steps__slider slider-steps__wienerberger">
+            <div>
+              <div class="steps__card">
+                <img src="img/special/spec-1.jpg" alt="" class="card__img">
+                <div class="card__descr">
+                  <span class="card__tittle">КЕРАМИЧЕСКАЯ ЧЕРЕПИЦА KORAMIC</span>
+                  <p class="card__text">Керамическая черепица европейского качества. Тщательно отобранное сырье, оптимизированные смеси глины, высокотехничное
+                  оборудование и современные методы производства гарантируют, что каждая черепица сделана безупречно. Гарантия — 30 лет.</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="steps__card">
+                <img src="img/special/spec-2.jpg" alt="" class="card__img">
+                <div class="card__descr">
+                  <span class="card__tittle">КЕРАМИЧЕСКАЯ ЧЕРЕПИЦА TONDACH</span>
+                  <p class="card__text">Для создания керамической черепицы Tondach используются не только старинные технологии, но и ультрасовременные
+                  разработки специалистов компании.
+                  Керамическая черепица Tondach одинаково подходит как для простых двускатных крыш, так и для сложных крыш с минимальным
+                  углом наклона.</p>
+                </div>
+              </div>
+            </div>
+              <div>
+              <div class="steps__card">
+                <img src="img/special/spec-3.jpg" alt="" class="card__img">
+                <div class="card__descr">
+                  <span class="card__tittle">КЛИНКЕРНАЯ БРУСЧАТКА PENTER</span>
+                  <p class="card__text">Брусчатка Penter имеет наивысший показатель прочности (Т4) и высокую плотность (2000 кг/куб.м), обеспечивающие ее
+                  необычайную износостойкость и долговечность. Ее можно использовать для мощения пешеходных дорожек, площадей, для дорог
+                  для движения тяжелого транспорта.</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="steps__card">
+                <img src="img/special/spec-4.jpg" alt="" class="card__img">
+                <div class="card__descr">
+                  <span class="card__tittle">СОПУТСТВУЮЩИЕ СТРОИТЕЛЬНЫЕ МАТЕРИАЛЫ</span>
+                  <p class="card__text">Весь ассортимент необходимых материалов: легкие штукатурки, теплые кладочные смеси, керамобетонные перемычки,
+                  базальтовая строительная сетка, сетчатые гильзы, кладочные сетки и др.</p>
+                </div>
+              </div>
+            </div>
+    
+            <div>
+              <div class="steps__card">
+                <img src="img/special/spec-5.jpg" alt="" class="card__img">
+                <div class="card__descr">
+                  <span class="card__tittle">КРУПНОФОРМАТНЫЕ КЕРАМИЧЕСКИЕ БЛОКИ POROTHERM</span>
+                  <p class="card__text">Керамический блок №1 в России по объемам производства. Теплый материал для строительства однослойных внешних стен без
+                  утепления и с утеплением и межкомнатных перегородок.</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="steps__card">
+                <img src="img/special/spec-6.jpg" alt="" class="card__img">
+                <div class="card__descr">
+                  <span class="card__tittle">ОБЛИЦОВОЧНЫЙ КИРПИЧ TERCA</span>
+                  <p class="card__text">Используется не только для фасадов домов, но и для отделки интерьера. Долговечный и прочный материал, который надолго
+                  сохраняет привлекательность фасада и интерьера.</p>
+                </div>
+              </div>
+            </div>
+
+            
+          </div>
+        </div>
+      </section>
+
+      <section class="porotherm" id="porotherm">
+        <div class="container">
+          <div class="porotherm__logo">
+            <img src="img/porotherm.jpg" alt="porotherm">
+          </div>
+          <h2 class="porotherm__title">ПРЕИМУЩЕСТВА КРУПНОФОРМАТНЫХ КЕРАМИЧЕСКИХ БЛОКОВ POROTHERM</h2>
+
+          <div class="porotherm__benefits benefits-porotherm">
+            <div class="benefits-porotherm__item">
+              <div class="benefits-porotherm__icon">
+                <i class="fa fa-heartbeat" aria-hidden="true"></i>
+              </div>
+              <div class="benefits-porotherm__text">ЗДОРОВЫЙ МИКРОКЛИМАТ В ДОМЕ</div>
+            </div>
+            <div class="benefits-porotherm__item">
+              <div class="benefits-porotherm__icon">
+                <i class="fa fa-home" aria-hidden="true"></i>
+              </div>
+              <div class="benefits-porotherm__text">ТИШИНА И СПОКОЙСТВИЕ В ДОМЕ</div>
+            </div>
+            <div class="benefits-porotherm__item">
+              <div class="benefits-porotherm__icon">
+                <i class="fa fa-street-view" aria-hidden="true"></i>
+              </div>
+              <div class="benefits-porotherm__text">ГИПОАЛЛЕРГЕННОСТЬ</div>
+            </div>
+            <div class="benefits-porotherm__item">
+              <div class="benefits-porotherm__icon">
+                <i class="fa fa-leaf" aria-hidden="true"></i>
+              </div>
+              <div class="benefits-porotherm__text">ЭКОЛОГИЧНОСТЬ</div>
+            </div>
+            <div class="benefits-porotherm__item">
+              <div class="benefits-porotherm__icon">
+                <i class="fa fa-hourglass" aria-hidden="true"></i>
+              </div>
+              <div class="benefits-porotherm__text">ДОЛГОВЕЧНОСТЬ</div>
+            </div>
+            <div class="benefits-porotherm__item">
+              <div class="benefits-porotherm__icon">
+                <i class="fa fa-recycle" aria-hidden="true"></i>
+              </div>
+              <div class="benefits-porotherm__text">ЭНЕРГОЭФФЕКТИВНОСТЬ</div>
+            </div>
+            <div class="benefits-porotherm__item">
+              <div class="benefits-porotherm__icon">
+                <i class="fa fa-thermometer-full" aria-hidden="true"></i>
+              </div>
+              <div class="benefits-porotherm__text">ЭКОНОМИЯ НА ОТОПЛЕНИИ И КОНДИЦИОНИРОВАНИИ</div>
+            </div>
+            <div class="benefits-porotherm__item">
+              <div class="benefits-porotherm__icon">
+                <i class="fa fa-hand-rock-o" aria-hidden="true"></i>
+              </div>
+              <div class="benefits-porotherm__text">СТЕНЫ ВЫДЕРЖАТ ЛЮБОЙ ВЕС</div>
+            </div>
+            <div class="benefits-porotherm__item">
+              <div class="benefits-porotherm__icon">
+                <i class="fa fa-gavel" aria-hidden="true"></i>
+              </div>
+              <div class="benefits-porotherm__text">БЫСТРОЕ ВОЗВЕДЕНИЕ СТЕН</div>
+            </div>
+            <div class="benefits-porotherm__item">
+              <div class="benefits-porotherm__icon">
+                <i class="fa fa-credit-card" aria-hidden="true"></i>
+              </div>
+              <div class="benefits-porotherm__text">ЭКОНОМИЯ НА ОТДЕЛОЧНЫХ МАТЕРИАЛАХ И КЛАДОЧНОМ РАСТВОРЕ</div>
+            </div>
+            <div class="benefits-porotherm__item">
+              <div class="benefits-porotherm__icon">
+                <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+              </div>
+              <div class="benefits-porotherm__text">ОТДЕЛОЧНЫЕ РАБОТЫ СРАЗУ ПОСЛЕ ЗАВЕРШЕНИЯ СТРОИТЕЛЬСТВА</div>
+            </div>
+            <div class="benefits-porotherm__item">
+              <div class="benefits-porotherm__icon">
+                <i class="fa fa-building-o" aria-hidden="true"></i>
+              </div>
+              <div class="benefits-porotherm__text">СТРОИТЕЛЬСТВО ЗДАНИЙ ДО 10 ЭТАЖЕЙ БЕЗ ДОПОЛНИТЕЛЬНОГО УКРЕПЛЕНИЯ КЛАДКИ</div>
+            </div>
+          </div>
+        </div>
+      </section> 
+
+      <section class="assortment" id="assortment">
+        <div class="container">
+          <h2 class="assortment__title">АССОРТИМЕНТ КЕРАМИЧЕСКИХ БЛОКОВ POROTHERM</h2>
+          <div class="assortment__cards">
+            <div class="assortment__card">
+              <img src="img/assortment/POROTHERM_8.jpg" alt="POROTHERM 8" class="assortment__img">
+              <div class="ssortment__descr">POROTHERM 8</div>
+            </div>
+            <div class="assortment__card">
+              <img src="img/assortment/POROTHERM_12.jpg" alt="POROTHERM 12" class="assortment__img">
+              <div class="ssortment__descr">POROTHERM 12</div>
+            </div>
+            <div class="assortment__card">
+              <img src="img/assortment/POROTHERM_20.jpg" alt="POROTHERM 20" class="assortment__img">
+              <div class="ssortment__descr">POROTHERM 20</div>
+            </div>
+            <div class="assortment__card">
+              <img src="img/assortment/POROTHERM_25.jpg" alt="POROTHERM 25 М" class="assortment__img">
+              <div class="ssortment__descr">POROTHERM 25 М</div>
+            </div>
+            <div class="assortment__card">
+              <img src="img/assortment/POROTHERM_25.jpg" alt="POROTHERM 25" class="assortment__img">
+              <div class="ssortment__descr">POROTHERM 25</div>
+            </div>
+            <div class="assortment__card">
+              <img src="img/assortment/POROTHERM_30.jpg" alt="POROTHERM 30" class="assortment__img">
+              <div class="ssortment__descr">POROTHERM 30</div>
+            </div>
+            <div class="assortment__card">
+              <img src="img/assortment/POROTHERM_38GL.jpg" alt="POROTHERM 38 GL" class="assortment__img">
+              <div class="ssortment__descr">POROTHERM 38 GL</div>
+            </div>
+            <div class="assortment__card">
+              <img src="img/assortment/POROTHERM_38_THERMO.jpg" alt="POROTHERM 38 THERMO" class="assortment__img">
+              <div class="ssortment__descr">POROTHERM 38 THERMO</div>
+            </div>
+            <div class="assortment__card">
+              <img src="img/assortment/POROTHERM_38D.jpg" alt="POROTHERM 38 ДОБОРНЫЙ" class="assortment__img">
+              <div class="ssortment__descr">POROTHERM 38 ДОБОРНЫЙ</div>
+            </div>
+            <div class="assortment__card">
+              <img src="img/assortment/POROTHERM_38.jpg" alt="POROTHERM 38" class="assortment__img">
+              <div class="ssortment__descr">POROTHERM 38</div>
+            </div>
+            <div class="assortment__card">
+              <img src="img/assortment/POROTHERM_44GL.jpg" alt="POROTHERM 44 GL" class="assortment__img">
+              <div class="ssortment__descr">POROTHERM 44 GL</div>
+            </div>
+            <div class="assortment__card">
+              <img src="img/assortment/POROTHERM_44R.jpg" alt="POROTHERM 44 R" class="assortment__img">
+              <div class="ssortment__descr">POROTHERM 44 R</div>
+            </div>
+            <div class="assortment__card">
+              <img src="img/assortment/POROTHERM_44D.jpg" alt="POROTHERM 44 ДОБОРНЫЙ" class="assortment__img">
+              <div class="ssortment__descr">POROTHERM 44 ДОБОРНЫЙ</div>
+            </div>
+            <div class="assortment__card">
+              <img src="img/assortment/POROTHERM_44.jpg" alt="POROTHERM 44" class="assortment__img">
+              <div class="ssortment__descr">POROTHERM 44</div>
+            </div>
+            <div class="assortment__card">
+              <img src="img/assortment/POROTHERM_51GL.jpg" alt="POROTHERM 51 GL" class="assortment__img">
+              <div class="ssortment__descr">POROTHERM 51 GL</div>
+            </div>
+            <div class="assortment__card">
+              <img src="img/assortment/POROTHERM_51D.jpg" alt="POROTHERM 51 ДОБОРНЫЙ" class="assortment__img">
+              <div class="ssortment__descr">POROTHERM 51 ДОБОРНЫЙ</div>
+            </div>
+            <div class="assortment__card">
+              <img src="img/assortment/POROTHERM_51.jpg" alt="POROTHERM 51" class="assortment__img">
+              <div class="ssortment__descr">POROTHERM 51</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="certificate" id="certificate">
+        <div class="container">
+          <h2 class="certificate__title">СЕРТИФИКАТЫ ECOMATERIAL GREEN</h2>
+          <div class="certificate__wrapper">
+            <div class="certificate__item"><img src="img/certificate/certif-1.jpg" alt="СЕРТИФИКАТ"></div>
+            <div class="certificate__item"><img src="img/certificate/certif-2.jpg" alt="СЕРТИФИКАТ"></div>
+            <div class="certificate__item"><img src="img/certificate/certif-3.jpg" alt="СЕРТИФИКАТ"></div>
+            <div class="certificate__item"><img src="img/certificate/certif-4.jpg" alt="СЕРТИФИКАТ"></div>
+            <div class="certificate__item"><img src="img/certificate/certif-5.jpg" alt="СЕРТИФИКАТ"></div>
+            <div class="certificate__item"><img src="img/certificate/certif-6.jpg" alt="СЕРТИФИКАТ"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="memo">
+        <div class="container">
+          <h2 class="memo__title">ПАМЯТКА ЖИЛЬЦУ ДОМА ИЗ КЕРАМИЧЕСКИХ БЛОКОВ POROTHERM</h2>
+          <div class="memo__wrapper">
+            <div class="memo__image"><img src="img/memo.jpg" alt="memo"></div>
+            <div class="memo__content content-memo">
+              <h3 class="content-memo__subtitle">ПОЛУЧИТЕ "ПАМЯТКУ ЖИЛЬЦУ" НА ВАШ EMAIL</h3>
+              <div class="content-memo__text">Узнайте о рекомендациях WIENERBERGER для качественного ремонта и комфортной жизни в вашем будущем доме из керамических
+              блоков Porotherm</div>
+              <a href="#form" class="content-memo__button btn">Получить памятку</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="porothern-video">
+        <div class="container">
+          <h2 class="porothern-video__title">ВИДЕО О ПРЕИМУЩЕСТВАХ БЛОКОВ POROTHERM</h2>
+          <div class="porothern-video__video">
+            <iframe
+              src="https://www.youtube.com/embed/NJCyQ1ZiEO0?autoplay=0&amp;controls=1&amp;loop=0&amp;mute=0&amp;rel=0&amp;start=0&amp;html5=1&amp;v=NJCyQ1ZiEO0&amp;feature=emb_title&amp;ab_channel=Unimart&amp;enablejsapi=1&amp;origin=https://unistroy24.ru"
+              frameborder="0" allowfullscreen="allowfullscreen"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              class="landing-block-node-embed embed-responsive-item g-video-preview w-100"
+              data-src="//www.youtube.com/embed/NJCyQ1ZiEO0?autoplay=0&amp;controls=1&amp;loop=0&amp;mute=0&amp;rel=0&amp;start=0&amp;html5=1&amp;v=NJCyQ1ZiEO0&amp;feature=emb_title&amp;ab_channel=Unimart"
+              data-source="https://www.youtube.com/watch?v=NJCyQ1ZiEO0&amp;feature=emb_title&amp;ab_channel=Unimart" id="widget2"
+              title="Преимущества блоков POROTHERM"></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="wienerberger" id="wienerberger">
+        <div class="container">
+          <h2 class="wienerberger__title">О КОМПАНИИ WIENERBERGER</h2>
+          <p class="wienerberger__subtitle">Официальное название компании: ООО «Винербергер Кирпич», ООО «Винербергер Куркачи»</p>
+          <div class="wienerberger__text">
+            <p>В России концерн Wienerberger AG представлен двумя заводами, которые имеют три производственные линии по производству
+            крупноформатных керамических блоков Porotherm.</p>
+            <p><span>Завод по производству керамоблоков Porotherm в Кипрево (Владимирская область):</span></p>
+            <p>Завод Wienerberger построен в 90 км от Москвы во Владимирской области рядом с деревней Кипрево. Он обслуживает
+            потребности Центрального и Северо-западного федеральных округов. На заводе действуют две производственные линии. Первая
+            производственная линия "Кипрево-1" запущена в эксплуатацию в конце 2006 года. Вторая производственная линия "Кипрево-2"
+            запущена в конце 2008 года. Обе производственные линии сконцентрированы на производстве керамических поризованных блоков
+            Porotherm (PTH 2,1 НФ, PTH 8, PTH 12, PTH 20, PTH 25, PTH 38, PTH 44, PTH 51, PTH 38 GL, PTH 44 GL, PTH 51 GL). Общая
+            проектная мощность двух производственных линий составляет 300 млн. усл. кирпичей в год. Вся выпускаемая продукция
+            соответствует ГОСТ 530-2012.</p>
+            <p><span>Завод по производству керамоблоков Porotherm в Куркачах (Республика Татарстан):</span></p>
+            <p>В конце 2008 года мы запустили второй завод в Республике Татарстан (станция Куркачи, Высокогорский р-н). Он обслуживает
+            потребности Приволжского, Уральского, Сибирского, Дальневосточного федеральных округов и республики Казахстан. На заводе
+            установлена одна производственная линия. Она сконцентрирована на производстве керамических блоков Porotherm (PTH 8, PTH
+            12, PTH 20, PTH 25, PTH 38, PTH 44, PTH 51, доборные блоки к РТН 38, 44, 51, PTH 44R). Также на заводе производятся
+            керамобетонные перемычки Porotherm 120/65. Проектная мощность завода – 150 млн. усл. кирпича в год.</p>
+            <p>Вся выпускаемая продукция соответствует ГОСТ 530-2012. Для удовлетворения постоянно растущего спроса на качественный
+            лицевой кирпич, брусчатку и черепицу компания осуществляет импорт готовой продукции предприятий Wienerberger из Эстонии,
+            Финляндии, Бельгии, Голландии, Германии, Франции и Польши..</p>
+
+            <p class="wienerberger__footer">
+              Сайт компании Wienerberger - <a href="wienerberger.ru">wienerberger.ru</a> 
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="benefits benefits__unistroy" id="unistroy">
+        <div class="container">
+          <h2 class="benefits__tittle tittle-benefits__unistroy">
+            UNISTROY — СЕРТИФИЦИРОВАННЫЙ ПОДРЯДЧИК WIENERBERGER
+          </h2>
+      
+          <p class="benefits__text text-benefits__unistroy">Компания UNISTROY вошла в топ-5 компаний по использованию продукции Wienerberger Russia в Московском регионе.</p>
+      
+          <div class="benefits__wrapper wrapper-benefits__unistroy">
+            <div class="benefits__item item-benefits">
+              <div class="item-benefits__icon">
+                <i class="fa fa-home benefits-icon" aria-hidden="true"></i>
+              </div>
+      
+              <div class="item-benefits__descr">
+                <h3 class="item-benefits__subtittle">ИСПОЛЬЗУЕМ ПРИ СТРОИТЕЛЬСТВЕ КОТТЕДЖЕЙ ПРОДУКЦИЮ WIENERBERGER</h3>
+                <p class="item-benefits__text">
+                  Наши эксперты при строительстве загородных домов используют весь спектр материалов WIENERBERGER: керамические
+                  поризованные блоки Porotherm, клинкерный кирпич, кирпич ручной формовки Terca, клинкерную брусчатку Penter.</p>
+              </div>
+            </div>
+      
+            <div class="benefits__item item-benefits">
+              <div class="item-benefits__icon">
+                <i class="fa fa-graduation-cap benefits-icon" aria-hidden="true"></i>
+              </div>
+      
+              <div class="item-benefits__descr">
+                <h3 class="item-benefits__subtittle">ЭКСПЕРТЫ UNISTROY ПРОХОДЯТ ОБУЧЕНИЕ В WIENERBERGER</h3>
+                <p class="item-benefits__text">
+                  Наши эксперты постоянно повышают свою квалификацию и проходят обучение на базе производителя: посещают обучающие
+                  семинары в школе Wienerberger, используют опыт профессионалов бренда при работе с проектами клиентов.</p>
+              </div>
+            </div>
+      
+            <div class="benefits__item item-benefits">
+              <div class="item-benefits__icon">
+                <i class="fa fa-id-card-o benefits-icon" aria-hidden="true"></i>
+              </div>
+      
+              <div class="item-benefits__descr">
+                <h3 class="item-benefits__subtittle">АККРЕДИТАЦИЯ ПО МОНТАЖУ КРУПНОФОРМАТНЫХ БЛОКОВ POROTHERM</h3>
+                <p class="item-benefits__text">
+                  Мы получили аккредитацию по монтажу керамических крупноформатных блоков Porotherm. UNISTROY построил уже более 20 домов
+                  из блоков Porotherm от Wienerberger. Доверие клиентов и официальное подтверждение качества работ производителем — лучший
+                  показатель надежности компании.</p>
+              </div>
+            </div>
+      
+            <div class="benefits__item item-benefits">
+              <div class="item-benefits__icon">
+                <i class="fa fa-clock-o benefits-icon" aria-hidden="true"></i>
+              </div>
+      
+              <div class="item-benefits__descr">
+                <h3 class="item-benefits__subtittle">КОРОТКИЕ СРОКИ СТРОИТЕЛЬСТВА ПРИ НЕИЗМЕННО ВЫСОКОМ КАЧЕСТВЕ</h3>
+                <p class="item-benefits__text">
+                  Материалы WIENERBERGER и применение современных технологий позволяют нам строить дома в короткие сроки с соблюдением
+                  всех строительных норм. Вы можете быть уверены в качестве нашей работы — оно подтверждено производителем и отзывами
+                  наших клиентов.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="certificate-unistroy">
+        <div class="container">
+          <div class="certificate-unistroy__img"><img src="img/certificate/certif-7.png" alt="unistroy24"></div>
+        </div>
+      </section>
+
+      <section class="consultation">
+          <h2 class="consultation__title">ПОЛУЧИТЕ КОНСУЛЬТАЦИЮ ЭКСПЕРТОВ UNISTROY ПО МАТЕРИАЛАМ WIENERBERGER</h2>
+          <div class="consultation__line line"></div>
+          
+
+
+          <div class="consultation__form">
+              <div class="wrapper">
+                <div class="form" id="form">
+                  <form class="form__body" action="#" id="form">
+                    <h2 class="form__title">Обратная связь</h2>
+                    <div class="form__text">
+                      Напишите нам сообщение, и мы с Вами свяжемся!
+                    </div>
+                    <div class="form__item">
+                      <label class="form__label " for="formName">Имя*:</label>
+                      <input class="form__input _req" id="formName" type="text" name="name" />
+                    </div>
+              
+                    <div class="form__item">
+                      <label class="form__label" for="formPhone">Телефон*:</label>
+                      <input class="form__input _req _phone" id="formPhone" type="tel" name="phone" />
+                    </div>
+              
+                    <div class="form__item">
+                      <label class="form__label" for="formEmail">E-mail*:</label>
+                      <input class="form__input _req _email" id="formEmail" type="text" name="email" />
+                    </div>
+              
+                    <div class="form__item">
+                      <label class="form__label" for="forMessage">Сообщение:</label>
+                      <textarea class="form__input" name="message" id="forMessage"></textarea>
+                    </div>
+              
+                    <div class="form__item">
+                      <div class="checkbox">
+                        <input class="checkbox__input _req" id="formAgreement" type="checkbox" name="agreement" checked />
+                        <label class="checkbox__label" for="formAgreement"><span>Нажимая кнопку «Отправить», я даю свое согласие на
+                            обработку
+                            моих персональных данных, в соответствии с Федеральным законом
+                            от 27.07.2006 года №152-ФЗ «О персональных данных», на
+                            условиях и для целей, определенных в Согласии на обработку
+                            персональных данных*</span></label>
+                      </div>
+                    </div>
+              
+                    <button class="form__button" type="submit">Отправить</button>
+                  </form>
+                </div>
+              </div>
+          </div>
+      </section>
+    </main>
+    
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__info">
+            <a href="#" class="footer__logo">
+              <img class="logo__img" src="img/logo.png" alt="logo">
+            </a>
+          
+            <ul class="footer__contacts contacts-footer">
+              <li class="contacts-footer__phone">
+                <a href="tell:+74955328087">
+                  <i class="fa fa-phone-square" aria-hidden="true"><span>8 (495) 532-80-87</span></i>
+                </a>
+              </li>
+          
+              <li class="contacts-footer__time">
+                <i class="fa fa-calendar" aria-hidden="true"><span>ПН-СБ: 09.00 -18.00</span></i>
+              </li>
+          
+              <li class="contacts-footer__mail">
+                <a href="email:info@stone-wood-house.ru">
+                  <i class="fa fa-envelope" aria-hidden="true"><span>info@stone-wood-house.ru</span></i>
+                </a>
+              </li>
+            </ul>
+          
+            <ul class="footer__social social-footer">
+              <li class="social__link">
+                <a class="social__youtube" href="https://www.youtube.com/channel/UCZIs0bRh2UB7gFpLxaoSATw?app=desktop">
+                  <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="social__link">
+                <a class="social__tg" href="https://t.me/stonewoodhouse">
+                  <i class="fa fa-telegram" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="social__link">
+                <a class="social__vk" href="https://vk.com/stonewoodhouse">
+                  <i class="fa fa-vk" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          
+          <iframe class="footer__map" src="https://yandex.ru/map-widget/v1/?z=12&amp;ol=biz&amp;oid=1525605179" frameborder="0">
+          </iframe>
+        </div>
+        
+      </div>
+      <div class="footer__copy">© 2022 Все права защищены.</div>
+    </footer>
+
+
+
+    <script type="text/javascript" src="/libs/jquery.min.js"></script>
+    <script src="/libs/slick/slick.min.js"></script>
+    <script src="/js/app.js"></script>
+  </body>
+</html>

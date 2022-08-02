@@ -160,7 +160,7 @@ $(function() {
     ]
   });
 
-
+// Фиксированная шапка
   var h_hght = 125; // высота шапки
 
   var h_mrg = 0;    // отступ когда шапка уже не видна
@@ -180,6 +180,15 @@ $(function() {
 
     }
   });
+
+  // Плавная прокрутка страницы
+  $('a[href*="#"]').on('click', function() {
+  $('html, body').animate({
+    scrollTop: $($.attr(this, 'href')).offset().top
+  }, 1000);
+  return false;
+});
+
 })
 
 
@@ -191,7 +200,8 @@ window.addEventListener('DOMContentLoaded', function(){
   let burger = document.querySelector('.header__burger'),
       menu = document.querySelector('.header__menu'),
       content = document.querySelector('.body'),
-      menuList = document.querySelector('.menu__list')
+      menuList = document.querySelector('.menu__list'),
+      menuItem = document.querySelectorAll('.menu__link');
 
     function toggleActive() {
       burger.addEventListener('click', () => {
@@ -200,8 +210,18 @@ window.addEventListener('DOMContentLoaded', function(){
         menu.classList.toggle('active');
         content.classList.toggle('lock');
       })
+
+      menuItem.forEach(e => {
+        e.addEventListener('click', () => {
+        burger.classList.remove('active');
+        menuList.classList.remove('active');
+        menu.classList.remove('active');
+        content.classList.remove('lock');
+        })
+      });
     }
     toggleActive();
+
 
     //Form 
 

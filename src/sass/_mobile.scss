@@ -187,6 +187,8 @@
       
     }
   }
+
+
 }
 
 
@@ -220,8 +222,8 @@
       position: absolute;
       cursor: pointer;
       z-index: 3;
-      right: 0;
-      top: 0;
+      right: 10px;
+      top: 10px;
       
     
       &::before,
@@ -272,25 +274,53 @@
       text-align: center;
       z-index: 3;
       width: 100%;
-
+      height: 60px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.466);
     }
 
     .menu {
-      display: none;
+
       &__item {
         margin-bottom: 20px;
       }
+      &__list {
+        display: none;
+        margin-top: 30px;
+        width: 100%;
+
+      
+      }
+    }
+  }
+
+  .header__burger.active {
+    &::before,
+    &::after {
+      background-color: #800000;
     }
   }
 
   .header__menu.active {
     width: 100%;
-    height: 100%;
+    height: 440px;
+    background-color: #fff;
+    transition: height 0.3s ease 0s;
+    box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.466);
   }
 
   .menu__list.active {
+    transition: all 1s ease 5s;
     display: block;
+    background-color: #fff;
+    .menu__item {
+      .menu__link {
+ 
+        color: #800000;
+      }
+      
+    }
   }
+    
 
   .promo {
     padding-bottom: 40px;
@@ -424,15 +454,11 @@
 
   .build {
     padding: 40px 0;
-    &__images {
 
-    }
 
-    .images__top {
-      .top__img {
-        width:150px;
-        height: 150px;
-      }
+    .top__img {
+      width:150px;
+      height: 150px;
     }
     .left-bottom {
       &__top {
@@ -465,6 +491,39 @@
   .footer {
     padding: 40px 0 0 0;
   }
+
+  // Wienerberger 
+
+  .wrapper-promo__wienerberger {
+    width: 100%;
+  }
+
+  .memo__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .memo__content {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+  .memo__image {
+    max-width: 450px;
+  }
+  .memo__content {
+    max-width: 450px;
+  }
+
+  .wienerberger {
+    padding: 40px 0;
+  }
+  .wienerberger__subtitle {
+    max-width: 500px;
+  }
+  .wienerberger__subtitle:before {
+    top: 45px;
+  }
+ 
 }
 
 @media (max-width: 561px) {
@@ -622,6 +681,67 @@
       align-items: center;
     }
 
+  }
 
+  .improve__card {
+    width: 300px;
+  }
+
+  .slider-construction__item {
+    width: 300px;
+  }
+
+  .slider-construction__content {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  .cards__img {
+    width: 190px;
+  }
+
+  .video__item {
+    width: 300px;
+  }
+
+  // Wienerberger
+
+  .wrapper-promo__wienerberger {
+    width: 100%;
+  }
+
+  .memo {
+    padding: 40px 0;
+  }
+  .memo__image {
+    max-width: 300px;
+  }
+
+  .memo__content {
+    max-width: 300px;
+  }
+
+  .wienerberger {
+    &__text {
+      text-align: center;
+    }
+  }
+  .wienerberger__subtitle {
+    max-width: 300px;
+  }
+
+  .wienerberger__subtitle:before {
+    top: 60px;
+  }
+  .wienerberger__footer {
+    max-width: 300px;
+  }
+  .wienerberger__footer:before {
+    top: 50px;
+  }
+
+  .wrapper-benefits__unistroy {
+    .item-benefits__icon {
+      width: 35px;
+    }
   }
 }
