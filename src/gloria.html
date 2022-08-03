@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/slick/slick.css">
+    <link rel="stylesheet" href="/libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="/css/style.min.css?<?php echo time();?>" type="text/css"/>
+
+    
+    <title>Глория</title>
+    <!-- фиксированная ширина -->
+    <!-- <meta name="viewport" content="width=1170">   -->
+    <!-- Отключает принудительную ссылку у номера телефона на iOS -->
+    <meta name="format-detection" content="telephone=no">
+    
+    
+    
+    <!-- SEO - оптимизация -->
+    <!-- Краткое описание страницы  -->
+    <meta name="description" content=" ">
+    
+    <!-- Ключевые слова страницы  -->
+    <meta name="keywords" content=" ">
+    
+    <!-- Управление доступом поисковых роботов к странице -->
+    <!-- <meta name="robots" content=""> -->
+    
+    <!-- По умолчанию страница индексируется поисковыми система, то есть этот мета тег дополнительно указывать не нужно. Но если задача стоит запретить либо ограничить индексацию, то существуют следующие значения:
+        none – запретить индексацию страницы полностью.
+        noindex – запретить индексацию содержимого страницы.
+        nofollow – игнорировать ссылки в пределах веб-страницы. 
+        noimageindex - запретить индексацию присутствующих на странице изображений
+        noarchive - запретить  вывод в результатах поиска ссылки «Сохраненная копия»
+        nosnippet - запретить  вывод в поисковой выдаче под названием страницы фрагмента текста, описывающего её содержание.
+        Значения указываются через запятую. -->
+    
+    
+    <!-- Технические -->
+    <!-- Автор страницы -->
+    <meta name="Author" content=" ">
+    
+    <!-- Авторские права -->
+    <meta name="Copyright" content=" ">
+    
+    <!-- Адрес автора -->
+    <meta name="Address" content=" ">
+    
+    <!-- Редирект (перезагрузка) страницы. Задержка в секундах; url=Адрес сайта/страницы -->
+    <meta http-equiv="refresh" content="S; url=URL">
+    
+    <!-- S= Задержка в секундах
+        URL= Адрес сайта/страницы -->
+
+    <!-- Сброс кэша при загрузки страницы -->
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+
+    
+    <!-- локализация сайта, для русскоязычного сайта ru_RU -->
+    <meta property="og:locale" content="ru_RU">
+    <!-- тип контента, по умолчанию используется article -->
+    <meta property="og:type" content="article">
+    <!-- заголовок страницы, который будет выводится в записи социальной сети -->
+    <meta property="og:title" content=" ">
+    <!-- описание страницы -->
+    <meta property="og:description" content=" ">
+    <!-- ссылка на изображение, которое будет публиковаться в записи -->
+    <meta property="og:image" content=" ">
+    <!-- ссылка на текущую страницу -->
+    <meta property="og:url" content=" ">
+    <!-- название сайта -->
+    <meta property="og:site_name" content=" ">
+    
+    
+    <!-- Тип карты, по умолчанию используется summary -->
+    <meta name="twitter:card" content="summary">
+    <!-- Имя/логин автора -->
+    <meta name="twitter:site" content=" ">
+    <!-- Название страницы -->
+    <meta name="twitter:title" content=" ">
+    <!-- Описание страницы -->
+    <meta name="twitter:description" content=" ">
+    <!-- Cсылка на изображение -->
+    <meta name="twitter:image" content=" ">
+
+  </head>
+  <body class="body">
+    <header class="header">
+      <div class="container">
+        <div class="header__info info-header">
+          <a href="#" class="info-header__logo">
+            <img src="img/logo.png" alt="logo">
+          </a>
+          
+
+          <ul class="info-header__contacts">
+            <li class="contacts__phone"> 
+              <a href="tell:+74955328087">
+                <i class="fa fa-phone-square" aria-hidden="true"><span>8 (495) 532-80-87</span></i>
+              </a>
+            </li>
+
+            <li class="contacts__time">
+              <i class="fa fa-calendar" aria-hidden="true"><span>ПН-СБ: 09.00 -18.00</span></i>
+            </li>
+            
+            <li class="contacts__mail">
+              <a href="email:info@stone-wood-house.ru"> 
+                <i class="fa fa-envelope" aria-hidden="true"><span>info@stone-wood-house.ru</span></i>
+              </a>
+            </li>
+          </ul>
+            
+          <div class="info-header__connection">
+            <a href="#form" class="info-header__button btn">Задать вопрос</a>
+            <ul class="info-header__social">
+              <li class="social__link">
+                <a class="social__youtube" href="https://www.youtube.com/channel/UCZIs0bRh2UB7gFpLxaoSATw?app=desktop">
+                  <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="social__link">
+                <a class="social__tg" href="https://t.me/stonewoodhouse">
+                  <i class="fa fa-telegram" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="social__link">
+                <a class="social__vk" href="https://vk.com/stonewoodhouse">
+                  <i class="fa fa-vk" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+            
+        </div>
+      </div>
+
+      <nav class="header__menu">
+        <div class="header__burger">
+          <span></span>
+        </div>
+    
+        <ul class="menu__list menu">
+          <li class="menu__item">
+            <a  class="menu__link" href="index.html">Главная</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="catalog.html">Каталог проектов</a>
+          </li>
+          <li class="menu__item">
+            <a  class="menu__link" href="news.html" >Новости</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="wienerberger.html">Wienerberger</a>
+          </li>
+          <li class="menu__item">
+            <a href="#footer" class="menu__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      
+    </header>
+
+    <main class="main">
+
+      <!------- Catalog ------>
+
+      <section class="project">
+        <div class="container">
+          <h2 class="project__title">Глория</h2>
+          <div class="project__wrapper">
+            <div class="project__image">
+              <img src="img/catalog/image-11.jpg" alt="">
+            </div>
+            <div class="project__content content-project">
+              <h3 class="content-project__title">О проекте</h3>
+              <p class="content-project__descr">Проект «Глория» сочетает в себе лучшие традиции русского классицизма с лёгкими нотками других
+              стилевых направлений — удивительный баланс строгости и роскоши.</p>
+              <h3 class="content-project__character">Характеристики проекта</h3>
+              <ul class="content-project__list">
+                <li class="content-project__item">
+                  <span class="content-project__text">Площадь:</span>
+                  <span class="content-project__value">500 кв.м</span>
+                </li>
+                <li class="content-project__item">
+                  <span class="content-project__text">Тип архитектуры:</span>
+                  <span class="content-project__value">Барокко</span>
+                </li>
+                <li class="content-project__item">
+                  <span class="content-project__text">Стоимость проекта:</span>
+                  <span class="content-project__value">15 000 000 руб.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="consultation">
+          <h2 class="consultation__title">ПОЛУЧИТЕ КОНСУЛЬТАЦИЮ ЭКСПЕРТА «WINERBERGER»</h2>
+          <div class="consultation__line line"></div>
+          <div class="consultation__form">
+              <div class="wrapper">
+                <div class="form" id="form">
+                  <form class="form__body" action="#" id="form">
+                    <h2 class="form__title">Обратная связь</h2>
+                    <div class="form__text">
+                      Напишите нам сообщение, и мы с Вами свяжемся!
+                    </div>
+                    <div class="form__item">
+                      <label class="form__label " for="formName">Имя*:</label>
+                      <input class="form__input _req" id="formName" type="text" name="name" />
+                    </div>
+              
+                    <div class="form__item">
+                      <label class="form__label" for="formPhone">Телефон*:</label>
+                      <input class="form__input _req _phone" id="formPhone" type="tel" name="phone" />
+                    </div>
+              
+                    <div class="form__item">
+                      <label class="form__label" for="formEmail">E-mail*:</label>
+                      <input class="form__input _req _email" id="formEmail" type="text" name="email" />
+                    </div>
+              
+                    <div class="form__item">
+                      <label class="form__label" for="forMessage">Сообщение:</label>
+                      <textarea class="form__input" name="message" id="forMessage"></textarea>
+                    </div>
+              
+                    <div class="form__item">
+                      <div class="checkbox">
+                        <input class="checkbox__input _req" id="formAgreement" type="checkbox" name="agreement" checked />
+                        <label class="checkbox__label" for="formAgreement"><span>Нажимая кнопку «Отправить», я даю свое согласие на
+                            обработку
+                            моих персональных данных, в соответствии с Федеральным законом
+                            от 27.07.2006 года №152-ФЗ «О персональных данных», на
+                            условиях и для целей, определенных в Согласии на обработку
+                            персональных данных*</span></label>
+                      </div>
+                    </div>
+              
+                    <button class="form__button" type="submit">Отправить</button>
+                  </form>
+                </div>
+              </div>
+          </div>
+      </section>
+    </main>
+    
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__info">
+            <a href="#" class="footer__logo">
+              <img class="logo__img" src="img/logo.png" alt="logo">
+            </a>
+          
+            <ul class="footer__contacts contacts-footer">
+              <li class="contacts-footer__phone">
+                <a href="tell:+74955328087">
+                  <i class="fa fa-phone-square" aria-hidden="true"><span>8 (495) 532-80-87</span></i>
+                </a>
+              </li>
+          
+              <li class="contacts-footer__time">
+                <i class="fa fa-calendar" aria-hidden="true"><span>ПН-СБ: 09.00 -18.00</span></i>
+              </li>
+          
+              <li class="contacts-footer__mail">
+                <a href="email:info@stone-wood-house.ru">
+                  <i class="fa fa-envelope" aria-hidden="true"><span>info@stone-wood-house.ru</span></i>
+                </a>
+              </li>
+            </ul>
+          
+            <ul class="footer__social social-footer">
+              <li class="social__link">
+                <a class="social__youtube" href="https://www.youtube.com/channel/UCZIs0bRh2UB7gFpLxaoSATw?app=desktop">
+                  <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="social__link">
+                <a class="social__tg" href="https://t.me/stonewoodhouse">
+                  <i class="fa fa-telegram" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="social__link">
+                <a class="social__vk" href="https://vk.com/stonewoodhouse">
+                  <i class="fa fa-vk" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          
+          <iframe class="footer__map" src="https://yandex.ru/map-widget/v1/?z=12&amp;ol=biz&amp;oid=1525605179" frameborder="0">
+          </iframe>
+        </div>
+        
+      </div>
+      <div class="footer__copy">© 2022 Все права защищены.</div>
+    </footer>
+
+
+
+    <script src="/libs/jquery.min.js" type="text/javascript" ></script>
+    <script src="/libs/slick/slick.min.js"></script>
+    <script src="/js/app.js"></script>
+  </body>
+</html>

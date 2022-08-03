@@ -1470,6 +1470,61 @@ h1, h2, h3 {
   border-radius: 10px;
 }
 
+.catalog-project {
+  margin-top: 60px;
+}
+
+.project {
+  padding: 80px 0;
+}
+.project__title {
+  margin-top: 40px;
+  text-align: center;
+}
+.project__wrapper {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  column-gap: 40px;
+  flex-wrap: wrap;
+}
+.project__image {
+  display: block;
+  width: 500px;
+}
+.project__image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.425);
+  margin-bottom: 30px;
+}
+.project__content {
+  max-width: 500px;
+}
+
+.content-project__descr {
+  margin-top: 20px;
+  line-height: 1.3;
+}
+.content-project__character {
+  margin-top: 30px;
+}
+.content-project__list {
+  margin-top: 20px;
+}
+.content-project__item {
+  margin-top: 10px;
+}
+.content-project__text {
+  font-weight: 600;
+}
+
+.project-news__time {
+  display: block;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
 .form {
   max-width: 700px;
   margin: 0 auto;
